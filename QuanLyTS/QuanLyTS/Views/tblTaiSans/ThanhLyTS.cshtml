@@ -1,0 +1,67 @@
+﻿@model QuanLyTS.Models.ThanhLyTS
+@{
+    ViewBag.Title = "ThanhLyTS";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Thống kê thanh lý tài sản</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Tên Tài Sản
+        </th>
+        <th>
+            Nước sản xuất
+        </th>
+        <th>
+            Năm sử dụng
+        </th>
+        <th>
+            Nơi đang lưu trữ
+        </th>
+        <th>
+            Nguyên giá
+        </th>
+        <th>
+            Giá trị còn lại
+        </th>
+        <th>
+            Số lượng TL
+        </th>  
+    </tr>
+
+    @foreach (var item in Model.taisans)
+    {
+        
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenTaiSan)
+                </td>                
+                <td>
+                    @Html.DisplayFor(modelItem => item.XuatXu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgayThangSD)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenKho)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DonGia)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DonGiaKhauHao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SoLuong)
+                </td>            
+            </tr>        
+    }
+
+
+</table>
+
+
+

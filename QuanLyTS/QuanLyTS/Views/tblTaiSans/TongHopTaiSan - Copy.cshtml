@@ -1,0 +1,196 @@
+﻿@*@model IEnumerable<QuanLyTS.Models.tblTaiSan>*@
+@model QuanLyTS.Models.tblTaiSan
+@{
+    ViewBag.Title = "TongHopTaiSan";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Thống kê loại tài sản</h2>
+@*<form method="post" action="/tbltaisans/tonghoptaisan*@
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.tblLoaiTaiSan.GroupAssetId, "Nhóm Tài Sản(*)", htmlAttributes: new { @class = "control-label col-md-3" })
+        <div class="col-md-8">
+            @Html.DropDownListFor(model => model.tblLoaiTaiSan.GroupAssetId, ViewBag.NhomTS as SelectList, "--Chọn Nhóm Tài Sản--", htmlAttributes: new { @class = "form-control", @onchange = "GetTypeAsset(this.value,'');" })
+            <input type="hidden" name="id" id="hdCode" />
+            @Html.ValidationMessageFor(model => model.tblLoaiTaiSan.GroupAssetId, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.MaLoai, "Loại Tài Sản(*)", htmlAttributes: new { @class = "control-label col-md-3" })
+        <div class="col-md-8">
+            <select id="MaLoai" name="MaLoai" class="form-control"  onchange="onDropdownChange(this.value);"></select>
+
+            @Html.ValidationMessageFor(model => model.MaLoai, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    <div class="form-group">
+               
+        <div class="row"  style="padding:0px;margin-top:10px">
+            <div class="col-md-3"></div>
+            <div class="col-md-offset-6" style="margin-top:50px!important">
+                <button class="btn btn-success"  type="submit">Thống kê</button>
+                <button class="btn btn-info" id="btnExport" style="margin-left:20px" type="button" onclick="location.href='@Url.Action("ExportDataByTypeAsset", "tbltaisans", new { id = ViewData["ID"] })'" >Xuất Excel</button>              
+               
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            alert('%%%');
+            @if (Model != null && Model.MaLoai != null)
+            {
+                @: console.log("Model >0");
+                            @:GetTypeAsset('@Model.tblLoaiTaiSan.GroupAssetId', '@Model.MaLoai')
+
+            }
+            else
+            {
+                 @: console.log("Model is null");
+            }
+
+            $('#btnExport').hide();
+            var v = $('#MaLoai').val();
+            $('#hdCode').val(v);
+            var count =  @ViewData["CountItem"] ;
+            if (count >0)
+            {
+                console.log('count >0')
+                $('#btnExport').show();
+            }
+            else
+            {
+                console.log('count =0')
+            }
+
+        });
+        function onDropdownChange(code) {
+            $('#hdCode').val(code);
+        }
+
+
+
+        function GetTypeAsset(_parentId, maloai) {
+
+            var procemessage = "<option value='0'> Please wait...</option>";
+            $("#MaLoai").html(procemessage).show();
+            var url = "/tblTaiSans/GetTypeAssetByParentId/";
+
+            $.ajax({
+                url: url,
+                data: { parentId: _parentId },
+                cache: false,
+                type: "POST",
+                success: function (data) {
+                    $('#MaTaiSan').val('');
+                    var markup = "<option value='0'>--Chọn loại tài sản--</option>";
+                    for (var x = 0; x < data.length; x++) {
+                        if (data[x].Value == maloai) {
+                            markup += "<option value=" + data[x].Value + " selected>" + data[x].Text + "</option>";
+                        }
+                        else {
+                            markup += "<option value=" + data[x].Value + ">" + data[x].Text + "</option>";
+                        }
+
+                    }
+                    $("#MaLoai").html(markup).show();
+                },
+                error: function (reponse) {
+                    alert("error : " + reponse);
+                }
+            });
+
+        }
+
+
+
+
+
+    </script>
+       
+}
+    
+
+    
+@*</form>*@
+    <table class="table table-bordered">
+    <tr>
+        <th>
+            Tên tài sản
+        </th>
+        <th>
+            Thông số kỹ thuật
+        </th>
+        <th>
+            Năm SD
+        </th>
+        <th>
+               
+            Xuất sứ
+        </th>
+        <th>
+            Thời gian bảo hành
+        </th>
+        <th>
+            Đơn vị tính
+        </th>
+        <th>
+            Ghi chú
+        </th>
+        <th>
+            Tên loại
+        </th>
+
+    </tr>
+    @try
+    {
+        @*foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenTaiSan)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ThongSoKyThuat)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NamSX)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.XuatXu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ThoiGianBaoHanh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DonViTinh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GhiChu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tblLoaiTaiSan.TenLoai)
+                </td>
+
+            </tr>
+        }*@
+
+    }
+    catch
+    {
+
+    }
+
+</table>  

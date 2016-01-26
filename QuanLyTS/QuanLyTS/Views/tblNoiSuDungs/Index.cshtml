@@ -1,0 +1,52 @@
+﻿@model IEnumerable<QuanLyTS.Models.tblNoiSuDung>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Nơi sử dụng</h2>
+
+<p>
+    @Html.ActionLink("Thêm mới", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Mã nơi SD
+        </th>
+        <th>
+            Tên nơi SD
+        </th>
+        <th>
+            Ghi chú
+        </th>
+        <th>
+            Tên bộ phận
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaNoiSD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenNoiSD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GhiChu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblBoPhan.TenBoPhan)
+        </td>
+        <td>
+            @Html.ActionLink("Sửa", "Edit", new { id=item.MaNoiSD }) |
+            @Html.ActionLink("Chi tiết", "Details", new { id=item.MaNoiSD }) |
+            @Html.ActionLink("Xóa", "Delete", new { id=item.MaNoiSD })
+        </td>
+    </tr>
+}
+
+</table>

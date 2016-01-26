@@ -1,0 +1,1500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuanLyTaiSanModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="QuanLyTSEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="proThongKeThanhLy" ReturnType="Collection(QuanLyTaiSanModel.proThongKeThanhLy_Result)" />
+    <FunctionImport Name="FeedBack1" ReturnType="Collection(QuanLyTaiSanModel.FeedBack1_Result)" />
+    <FunctionImport Name="FeedBack2" ReturnType="Collection(QuanLyTaiSanModel.FeedBack2_Result)">
+      <Parameter Name="Manguoimuon" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Loadgriddieuchuyen" ReturnType="Collection(QuanLyTaiSanModel.Loadgriddieuchuyen_Result)">
+      <Parameter Name="Manguoimuon" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proSuaBienBanBanGiao">
+      <Parameter Name="MaBienBan" Mode="In" Type="String" />
+      <Parameter Name="DonViGiaoID" Mode="In" Type="String" />
+      <Parameter Name="MaCBGVNhan" Mode="In" Type="String" />
+      <Parameter Name="NgayGiao" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="proSuaLoaiTaiSan">
+      <Parameter Name="MaLoai" Mode="In" Type="String" />
+      <Parameter Name="TenLoai" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proSuaTaiSan">
+      <Parameter Name="MaTaiSan" Mode="In" Type="String" />
+      <Parameter Name="MaLoai" Mode="In" Type="String" />
+      <Parameter Name="TenTaiSan" Mode="In" Type="String" />
+      <Parameter Name="ThongSoKyThuat" Mode="In" Type="String" />
+      <Parameter Name="NamSD" Mode="In" Type="Int32" />
+      <Parameter Name="XuatXu" Mode="In" Type="String" />
+      <Parameter Name="ThoiGianBaoHanh" Mode="In" Type="String" />
+      <Parameter Name="DonViTinh" Mode="In" Type="String" />
+      <Parameter Name="GhiChu" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proThemBienBanBanGiao">
+      <Parameter Name="MaBienBan" Mode="In" Type="String" />
+      <Parameter Name="DonViGiaoID" Mode="In" Type="String" />
+      <Parameter Name="MaCBGVNhan" Mode="In" Type="String" />
+      <Parameter Name="NgayGiao" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="proThemLoaiTS">
+      <Parameter Name="MaLoai" Mode="In" Type="String" />
+      <Parameter Name="TenLoai" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proThemTaiSan">
+      <Parameter Name="MaTaiSan" Mode="In" Type="String" />
+      <Parameter Name="MaLoai" Mode="In" Type="String" />
+      <Parameter Name="TenTaiSan" Mode="In" Type="String" />
+      <Parameter Name="ThongSoKyThuat" Mode="In" Type="String" />
+      <Parameter Name="NamSD" Mode="In" Type="Int32" />
+      <Parameter Name="XuatXu" Mode="In" Type="String" />
+      <Parameter Name="ThoiGianBaoHanh" Mode="In" Type="String" />
+      <Parameter Name="DonViTinh" Mode="In" Type="String" />
+      <Parameter Name="GhiChu" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proThemTinhTrangTS">
+      <Parameter Name="MoTaTinhTrang" Mode="In" Type="String" />
+      <Parameter Name="GhiChu" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proThongKeCongCuVatTu" ReturnType="Collection(QuanLyTaiSanModel.proThongKeCongCuVatTu_Result)" />
+    <FunctionImport Name="proThongKeTaiSanCoDinh" ReturnType="Collection(QuanLyTaiSanModel.proThongKeTaiSanCoDinh_Result)" />
+    <FunctionImport Name="proTimKiemTaiSanTheoNoiSuDung" ReturnType="Collection(QuanLyTaiSanModel.proTimKiemTaiSanTheoNoiSuDung_Result)">
+      <Parameter Name="TenTaiSan" Mode="In" Type="String" />
+      <Parameter Name="MaNoiSD" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proTimKiemTaiSanTrongKho" ReturnType="Collection(QuanLyTaiSanModel.proTimKiemTaiSanTrongKho_Result)">
+      <Parameter Name="TenTaiSan" Mode="In" Type="String" />
+      <Parameter Name="MaKho" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proXoaBienBanBanGiao">
+      <Parameter Name="MaBienBan" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proXoaLoaiTS">
+      <Parameter Name="MaLoai" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proXoaTaiSan">
+      <Parameter Name="MaTaiSan" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(QuanLyTaiSanModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(QuanLyTaiSanModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <FunctionImport Name="st_LayBoPhan" ReturnType="Collection(QuanLyTaiSanModel.st_LayBoPhan_Result)" />
+    <FunctionImport Name="st_LayMaGiaoVien" ReturnType="Collection(QuanLyTaiSanModel.st_LayMaGiaoVien_Result)" />
+    <FunctionImport Name="st_LayMakho1" ReturnType="Collection(QuanLyTaiSanModel.st_LayMakho1_Result)" />
+    <FunctionImport Name="st_LayMaNoiSD" ReturnType="Collection(QuanLyTaiSanModel.st_LayMaNoiSD_Result)" />
+    <FunctionImport Name="st_LayMaPhieu" />
+    <FunctionImport Name="st_LayMaPhieuTra" />
+    <FunctionImport Name="st_LayMaTaiSan" ReturnType="Collection(QuanLyTaiSanModel.st_LayMaTaiSan_Result)" />
+    <FunctionImport Name="st_LayMaTaiSandieuchuyen" ReturnType="Collection(QuanLyTaiSanModel.st_LayMaTaiSandieuchuyen_Result)" />
+    <FunctionImport Name="st_LayMaTaiSanTra" ReturnType="Collection(QuanLyTaiSanModel.st_LayMaTaiSanTra_Result)" />
+    <FunctionImport Name="st_LayMayChieu" ReturnType="Collection(QuanLyTaiSanModel.st_LayMayChieu_Result)" />
+    <FunctionImport Name="st_LayMayChieu1" />
+    <FunctionImport Name="st_LayMayChieu2" ReturnType="Collection(QuanLyTaiSanModel.st_LayMayChieu2_Result)" />
+    <FunctionImport Name="st_LayMayChieuTra" ReturnType="Collection(QuanLyTaiSanModel.st_LayMayChieuTra_Result)" />
+    <FunctionImport Name="st_LayThanhvien" ReturnType="Collection(QuanLyTaiSanModel.st_LayThanhvien_Result)" />
+    <FunctionImport Name="st_Loadgridmataisandieuchuyen" ReturnType="Collection(QuanLyTaiSanModel.st_Loadgridmataisandieuchuyen_Result)">
+      <Parameter Name="Manguoichuyen" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="st_Loadgridmataisanmuon" ReturnType="Collection(QuanLyTaiSanModel.st_Loadgridmataisanmuon_Result)">
+      <Parameter Name="Manguoimuon" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="st_Loadgridmataisantra" ReturnType="Collection(QuanLyTaiSanModel.st_Loadgridmataisantra_Result)">
+      <Parameter Name="Manguoitra" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="st_Loadgridmaychieu" ReturnType="Collection(QuanLyTaiSanModel.st_Loadgridmaychieu_Result)" />
+    <FunctionImport Name="st_QuenMatKhau" ReturnType="Collection(QuanLyTaiSanModel.st_QuenMatKhau_Result)">
+      <Parameter Name="tenDN" Mode="In" Type="String" />
+      <Parameter Name="Email" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="st_TraMayChieu" ReturnType="Collection(QuanLyTaiSanModel.st_TraMayChieu_Result)" />
+    <FunctionImport Name="thongke1" ReturnType="Collection(QuanLyTaiSanModel.thongke1_Result)">
+      <Parameter Name="Manguoimuon" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="thongke2" ReturnType="Collection(QuanLyTaiSanModel.thongke2_Result)">
+      <Parameter Name="Manguoimuon" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="thongke3" ReturnType="Collection(QuanLyTaiSanModel.thongke3_Result)">
+      <Parameter Name="Manoisudung" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="thongke4" ReturnType="Collection(QuanLyTaiSanModel.thongke4_Result)">
+      <Parameter Name="Manoisudung" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="thongkedieuchuyen" ReturnType="Collection(QuanLyTaiSanModel.thongkedieuchuyen_Result)">
+      <Parameter Name="Manoisudung" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="thongketaisanchotra" ReturnType="Collection(QuanLyTaiSanModel.thongketaisanchotra_Result)">
+      <Parameter Name="Manguoimuon" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="thongketaisandangchomuon" ReturnType="Collection(QuanLyTaiSanModel.thongketaisandangchomuon_Result)">
+      <Parameter Name="Manguoimuon" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Thongketaisankho" />
+    <FunctionImport Name="Thongtincanhantaikhoan" ReturnType="Collection(QuanLyTaiSanModel.Thongtincanhantaikhoan_Result)">
+      <Parameter Name="tendangnhap" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="timtheotentaisan" ReturnType="Collection(QuanLyTaiSanModel.timtheotentaisan_Result)">
+      <Parameter Name="tentaisan" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="C__MigrationHistory" EntityType="QuanLyTaiSanModel.C__MigrationHistory" />
+    <EntitySet Name="AspNetRoles" EntityType="QuanLyTaiSanModel.AspNetRole" />
+    <EntitySet Name="AspNetUserClaims" EntityType="QuanLyTaiSanModel.AspNetUserClaim" />
+    <EntitySet Name="AspNetUserLogins" EntityType="QuanLyTaiSanModel.AspNetUserLogin" />
+    <EntitySet Name="AspNetUsers" EntityType="QuanLyTaiSanModel.AspNetUser" />
+    <EntitySet Name="sysdiagrams" EntityType="QuanLyTaiSanModel.sysdiagram" />
+    <EntitySet Name="tblBoPhans" EntityType="QuanLyTaiSanModel.tblBoPhan" />
+    <EntitySet Name="tblCanBoGiaoViens" EntityType="QuanLyTaiSanModel.tblCanBoGiaoVien" />
+    <EntitySet Name="tblChiTietChuyens" EntityType="QuanLyTaiSanModel.tblChiTietChuyen" />
+    <EntitySet Name="tblChiTietGiaoNhans" EntityType="QuanLyTaiSanModel.tblChiTietGiaoNhan" />
+    <EntitySet Name="tblChiTietPhieuMuons" EntityType="QuanLyTaiSanModel.tblChiTietPhieuMuon" />
+    <EntitySet Name="tblChiTietPhieuTras" EntityType="QuanLyTaiSanModel.tblChiTietPhieuTra" />
+    <EntitySet Name="tblDonVis" EntityType="QuanLyTaiSanModel.tblDonVi" />
+    <EntitySet Name="tblDuAns" EntityType="QuanLyTaiSanModel.tblDuAn" />
+    <EntitySet Name="tblGroupAssets" EntityType="QuanLyTaiSanModel.tblGroupAsset" />
+    <EntitySet Name="tblKhoLuuTrus" EntityType="QuanLyTaiSanModel.tblKhoLuuTru" />
+    <EntitySet Name="tblKhoTaiSans" EntityType="QuanLyTaiSanModel.tblKhoTaiSan" />
+    <EntitySet Name="tblLoaiTaiSans" EntityType="QuanLyTaiSanModel.tblLoaiTaiSan" />
+    <EntitySet Name="tblNoiSuDungs" EntityType="QuanLyTaiSanModel.tblNoiSuDung" />
+    <EntitySet Name="tblNoiSuDungTaiSans" EntityType="QuanLyTaiSanModel.tblNoiSuDungTaiSan" />
+    <EntitySet Name="tblPhieuBanGiaos" EntityType="QuanLyTaiSanModel.tblPhieuBanGiao" />
+    <EntitySet Name="tblQuaTrinhDiChuyens" EntityType="QuanLyTaiSanModel.tblQuaTrinhDiChuyen" />
+    <EntitySet Name="tblTaiKhoans" EntityType="QuanLyTaiSanModel.tblTaiKhoan" />
+    <EntitySet Name="tblTaiSans" EntityType="QuanLyTaiSanModel.tblTaiSan" />
+    <EntitySet Name="tblTinhTrangs" EntityType="QuanLyTaiSanModel.tblTinhTrang" />
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="QuanLyTaiSanModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaim" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="QuanLyTaiSanModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogin" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblCBGV_tblBoPhan" Association="QuanLyTaiSanModel.FK_tblCBGV_tblBoPhan">
+      <End Role="tblBoPhan" EntitySet="tblBoPhans" />
+      <End Role="tblCanBoGiaoVien" EntitySet="tblCanBoGiaoViens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblKhoLuuTru_tblBoPhan" Association="QuanLyTaiSanModel.FK_tblKhoLuuTru_tblBoPhan">
+      <End Role="tblBoPhan" EntitySet="tblBoPhans" />
+      <End Role="tblKhoLuuTru" EntitySet="tblKhoLuuTrus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblNoiSuDung_tblBoPhan" Association="QuanLyTaiSanModel.FK_tblNoiSuDung_tblBoPhan">
+      <End Role="tblBoPhan" EntitySet="tblBoPhans" />
+      <End Role="tblNoiSuDung" EntitySet="tblNoiSuDungs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblChiTietPhieuMuon_tblCanBoGiaoVien" Association="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblCanBoGiaoVien">
+      <End Role="tblCanBoGiaoVien" EntitySet="tblCanBoGiaoViens" />
+      <End Role="tblChiTietPhieuMuon" EntitySet="tblChiTietPhieuMuons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblChiTietPhieuTra_tblCanBoGiaoVien" Association="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblCanBoGiaoVien">
+      <End Role="tblCanBoGiaoVien" EntitySet="tblCanBoGiaoViens" />
+      <End Role="tblChiTietPhieuTra" EntitySet="tblChiTietPhieuTras" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPhieuBanGiao_tblCanBoGiaoVien" Association="QuanLyTaiSanModel.FK_tblPhieuBanGiao_tblCanBoGiaoVien">
+      <End Role="tblCanBoGiaoVien" EntitySet="tblCanBoGiaoViens" />
+      <End Role="tblPhieuBanGiao" EntitySet="tblPhieuBanGiaos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblQuaTrinhDiChuyen_tblCanBoGiaoVien" Association="QuanLyTaiSanModel.FK_tblQuaTrinhDiChuyen_tblCanBoGiaoVien">
+      <End Role="tblCanBoGiaoVien" EntitySet="tblCanBoGiaoViens" />
+      <End Role="tblQuaTrinhDiChuyen" EntitySet="tblQuaTrinhDiChuyens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTaiKhoan_tblCanBoGiaoVien" Association="QuanLyTaiSanModel.FK_tblTaiKhoan_tblCanBoGiaoVien">
+      <End Role="tblCanBoGiaoVien" EntitySet="tblCanBoGiaoViens" />
+      <End Role="tblTaiKhoan" EntitySet="tblTaiKhoans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblChiTietChuyen_tblKhoLuuTru" Association="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblKhoLuuTru">
+      <End Role="tblKhoLuuTru" EntitySet="tblKhoLuuTrus" />
+      <End Role="tblChiTietChuyen" EntitySet="tblChiTietChuyens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblChiTietChuyen_tblNoiSuDung" Association="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblNoiSuDung">
+      <End Role="tblNoiSuDung" EntitySet="tblNoiSuDungs" />
+      <End Role="tblChiTietChuyen" EntitySet="tblChiTietChuyens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblChiTietChuyen_tblQuaTrinhDiChuyen" Association="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblQuaTrinhDiChuyen">
+      <End Role="tblQuaTrinhDiChuyen" EntitySet="tblQuaTrinhDiChuyens" />
+      <End Role="tblChiTietChuyen" EntitySet="tblChiTietChuyens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblChiTietChuyen_tblTaiSan" Association="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblTaiSan">
+      <End Role="tblTaiSan" EntitySet="tblTaiSans" />
+      <End Role="tblChiTietChuyen" EntitySet="tblChiTietChuyens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblChiTietChuyen_tblTinhTrang" Association="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblTinhTrang">
+      <End Role="tblTinhTrang" EntitySet="tblTinhTrangs" />
+      <End Role="tblChiTietChuyen" EntitySet="tblChiTietChuyens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblChiTietGiaoNhan_tblKhoLuuTru" Association="QuanLyTaiSanModel.FK_tblChiTietGiaoNhan_tblKhoLuuTru">
+      <End Role="tblKhoLuuTru" EntitySet="tblKhoLuuTrus" />
+      <End Role="tblChiTietGiaoNhan" EntitySet="tblChiTietGiaoNhans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblChiTietGiaoNhan_tblPhieuBanGiao" Association="QuanLyTaiSanModel.FK_tblChiTietGiaoNhan_tblPhieuBanGiao">
+      <End Role="tblPhieuBanGiao" EntitySet="tblPhieuBanGiaos" />
+      <End Role="tblChiTietGiaoNhan" EntitySet="tblChiTietGiaoNhans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblChiTietGiaoNhan_tblTinhTrang1" Association="QuanLyTaiSanModel.FK_tblChiTietGiaoNhan_tblTinhTrang1">
+      <End Role="tblTinhTrang" EntitySet="tblTinhTrangs" />
+      <End Role="tblChiTietGiaoNhan" EntitySet="tblChiTietGiaoNhans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblChiTietPhieuMuon_tblKhoLuuTru" Association="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblKhoLuuTru">
+      <End Role="tblKhoLuuTru" EntitySet="tblKhoLuuTrus" />
+      <End Role="tblChiTietPhieuMuon" EntitySet="tblChiTietPhieuMuons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblChiTietPhieuMuon_tblNoiSuDung" Association="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblNoiSuDung">
+      <End Role="tblNoiSuDung" EntitySet="tblNoiSuDungs" />
+      <End Role="tblChiTietPhieuMuon" EntitySet="tblChiTietPhieuMuons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblChiTietPhieuMuon_tblTaiSan" Association="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblTaiSan">
+      <End Role="tblTaiSan" EntitySet="tblTaiSans" />
+      <End Role="tblChiTietPhieuMuon" EntitySet="tblChiTietPhieuMuons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblChiTietPhieuMuon_tblTinhTrang" Association="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblTinhTrang">
+      <End Role="tblTinhTrang" EntitySet="tblTinhTrangs" />
+      <End Role="tblChiTietPhieuMuon" EntitySet="tblChiTietPhieuMuons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblChiTietPhieuTra_tblKhoLuuTru" Association="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblKhoLuuTru">
+      <End Role="tblKhoLuuTru" EntitySet="tblKhoLuuTrus" />
+      <End Role="tblChiTietPhieuTra" EntitySet="tblChiTietPhieuTras" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblChiTietPhieuTra_tblNoiSuDung" Association="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblNoiSuDung">
+      <End Role="tblNoiSuDung" EntitySet="tblNoiSuDungs" />
+      <End Role="tblChiTietPhieuTra" EntitySet="tblChiTietPhieuTras" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblChiTietPhieuTra_tblTaiSan" Association="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblTaiSan">
+      <End Role="tblTaiSan" EntitySet="tblTaiSans" />
+      <End Role="tblChiTietPhieuTra" EntitySet="tblChiTietPhieuTras" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblChiTietPhieuTra_tblTinhTrang" Association="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblTinhTrang">
+      <End Role="tblTinhTrang" EntitySet="tblTinhTrangs" />
+      <End Role="tblChiTietPhieuTra" EntitySet="tblChiTietPhieuTras" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPhieuBanGiao_tblDonVi" Association="QuanLyTaiSanModel.FK_tblPhieuBanGiao_tblDonVi">
+      <End Role="tblDonVi" EntitySet="tblDonVis" />
+      <End Role="tblPhieuBanGiao" EntitySet="tblPhieuBanGiaos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTaiSan_tblDonVi" Association="QuanLyTaiSanModel.FK_tblTaiSan_tblDonVi">
+      <End Role="tblDonVi" EntitySet="tblDonVis" />
+      <End Role="tblTaiSan" EntitySet="tblTaiSans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTaiSan_tblDuAn" Association="QuanLyTaiSanModel.FK_tblTaiSan_tblDuAn">
+      <End Role="tblDuAn" EntitySet="tblDuAns" />
+      <End Role="tblTaiSan" EntitySet="tblTaiSans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLoaiTaiSan_tblGroupAsset" Association="QuanLyTaiSanModel.FK_tblLoaiTaiSan_tblGroupAsset">
+      <End Role="tblGroupAsset" EntitySet="tblGroupAssets" />
+      <End Role="tblLoaiTaiSan" EntitySet="tblLoaiTaiSans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblKhoTaiSan_tblKhoLuuTru" Association="QuanLyTaiSanModel.FK_tblKhoTaiSan_tblKhoLuuTru">
+      <End Role="tblKhoLuuTru" EntitySet="tblKhoLuuTrus" />
+      <End Role="tblKhoTaiSan" EntitySet="tblKhoTaiSans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblKhoTaiSan_tblTaiSan" Association="QuanLyTaiSanModel.FK_tblKhoTaiSan_tblTaiSan">
+      <End Role="tblTaiSan" EntitySet="tblTaiSans" />
+      <End Role="tblKhoTaiSan" EntitySet="tblKhoTaiSans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTaiSan_tblLoaiTaiSan" Association="QuanLyTaiSanModel.FK_tblTaiSan_tblLoaiTaiSan">
+      <End Role="tblLoaiTaiSan" EntitySet="tblLoaiTaiSans" />
+      <End Role="tblTaiSan" EntitySet="tblTaiSans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblNoiSuDungTaiSan_tblNoiSuDung" Association="QuanLyTaiSanModel.FK_tblNoiSuDungTaiSan_tblNoiSuDung">
+      <End Role="tblNoiSuDung" EntitySet="tblNoiSuDungs" />
+      <End Role="tblNoiSuDungTaiSan" EntitySet="tblNoiSuDungTaiSans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblNoiSuDungTaiSan_tblTaiSan" Association="QuanLyTaiSanModel.FK_tblNoiSuDungTaiSan_tblTaiSan">
+      <End Role="tblTaiSan" EntitySet="tblTaiSans" />
+      <End Role="tblNoiSuDungTaiSan" EntitySet="tblNoiSuDungTaiSans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTaiSan_tblTinhTrang" Association="QuanLyTaiSanModel.FK_tblTaiSan_tblTinhTrang">
+      <End Role="tblTinhTrang" EntitySet="tblTinhTrangs" />
+      <End Role="tblTaiSan" EntitySet="tblTaiSans" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="QuanLyTaiSanModel.AspNetUserRoles">
+      <End Role="AspNetRole" EntitySet="AspNetRoles" />
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="proThongKeThanhLy_Result">
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="ThongSoKyThuat" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="XuatXu" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="MaLoai" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="SoLuong" Nullable="true" />
+    <Property Type="Double" Name="DonGia" Nullable="true" />
+    <Property Type="String" Name="MaPhieuGiao" Nullable="false" MaxLength="50" />
+    <Property Type="Double" Name="DonGiaKhauHao" Nullable="true" />
+    <Property Type="DateTime" Name="NgayThangSD" Nullable="true" Precision="23" />
+    <Property Type="String" Name="TenKho" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="FeedBack1_Result">
+    <Property Type="Int32" Name="MaPhieu" Nullable="false" />
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="TinhTrang" Nullable="true" />
+    <Property Type="String" Name="MaKho" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="SoLuong" Nullable="true" />
+    <Property Type="String" Name="MaNoiSD" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiGiao" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiMuon" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="NgayMuon" Nullable="true" Precision="23" />
+    <Property Type="String" Name="TrangThai" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="FeedBack2_Result">
+    <Property Type="Int32" Name="MaPhieu" Nullable="false" />
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="TinhTrang" Nullable="true" />
+    <Property Type="String" Name="MaKho" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="SoLuong" Nullable="true" />
+    <Property Type="String" Name="MaNoiSD" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiGiao" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiMuon" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="NgayMuon" Nullable="true" Precision="23" />
+    <Property Type="String" Name="TrangThai" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="Loadgriddieuchuyen_Result">
+    <Property Type="String" Name="MaLanChuyen" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="MoTa" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="SoLuong" Nullable="false" />
+    <Property Type="String" Name="MaKho" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MaNoiSD" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiDieuChuyen" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="NgayChuyen" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DonViTinh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ThongSoKyThuat" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="proThongKeCongCuVatTu_Result">
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="DonViTinh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="XuatXu" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="ThongSoKyThuat" Nullable="true" MaxLength="200" />
+    <Property Type="DateTime" Name="NgayThangSD" Nullable="true" Precision="23" />
+    <Property Type="String" Name="MaKho" Nullable="false" MaxLength="50" />
+    <Property Type="Double" Name="DonGia" Nullable="true" />
+    <Property Type="Double" Name="DonGiaKhauHao" Nullable="true" />
+    <Property Type="Int32" Name="SoLuong" Nullable="true" />
+    <Property Type="String" Name="GhiChu" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="proThongKeTaiSanCoDinh_Result">
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="DonViTinh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="XuatXu" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="ThongSoKyThuat" Nullable="true" MaxLength="200" />
+    <Property Type="DateTime" Name="NgayThangSD" Nullable="true" Precision="23" />
+    <Property Type="String" Name="MaKho" Nullable="false" MaxLength="50" />
+    <Property Type="Double" Name="DonGia" Nullable="true" />
+    <Property Type="Double" Name="DonGiaKhauHao" Nullable="true" />
+    <Property Type="Int32" Name="SoLuong" Nullable="true" />
+    <Property Type="String" Name="GhiChu" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="proTimKiemTaiSanTheoNoiSuDung_Result">
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="ThongSoKyThuat" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="XuatXu" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="SoLuong" Nullable="true" />
+    <Property Type="String" Name="TenNoiSD" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNoiSD" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="proTimKiemTaiSanTrongKho_Result">
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="ThongSoKyThuat" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="XuatXu" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="SoLuong" Nullable="true" />
+    <Property Type="String" Name="TenKho" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaKho" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenBoPhan" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="st_LayBoPhan_Result">
+    <Property Type="String" Name="MaBoPhan" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenBoPhan" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="st_LayMaGiaoVien_Result">
+    <Property Type="String" Name="MaGiaoVien" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Hoten" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="st_LayMakho1_Result">
+    <Property Type="String" Name="MaKho" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenKho" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="st_LayMaNoiSD_Result">
+    <Property Type="String" Name="MaNoiSD" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenNoiSD" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="st_LayMaTaiSan_Result">
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="st_LayMaTaiSandieuchuyen_Result">
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="st_LayMaTaiSanTra_Result">
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="st_LayMayChieu_Result">
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="st_LayMayChieu2_Result">
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="st_LayMayChieuTra_Result">
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="st_LayThanhvien_Result">
+    <Property Type="String" Name="MaGiaoVien" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Hoten" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="st_Loadgridmataisandieuchuyen_Result">
+    <Property Type="String" Name="MaLanChuyen" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="MoTa" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="SoLuong" Nullable="false" />
+    <Property Type="String" Name="MaKho" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MaNoiSD" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiDieuChuyen" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="NgayChuyen" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DonViTinh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ThongSoKyThuat" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="st_Loadgridmataisanmuon_Result">
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="TenLoai" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MoTa" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="SoLuong" Nullable="true" />
+    <Property Type="String" Name="MaKho" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNoiSD" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiGiao" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiMuon" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="NgayMuon" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DonViTinh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ThoiGianBaoHanh" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="st_Loadgridmataisantra_Result">
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="TenLoai" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MoTa" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="SoLuong" Nullable="true" />
+    <Property Type="String" Name="MaKho" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNoiSD" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiTra" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiNhan" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="NgayTra" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DonViTinh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ThoiGianBaoHanh" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="st_Loadgridmaychieu_Result">
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="MaPhieu" Nullable="false" />
+    <Property Type="Int32" Name="TinhTrang" Nullable="true" />
+    <Property Type="Int32" Name="SoLuong" Nullable="true" />
+    <Property Type="String" Name="MaKho" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNoiSD" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiGiao" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiMuon" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="NgayMuon" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DonViTinh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ThongSoKyThuat" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ThoiGianBaoHanh" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="st_QuenMatKhau_Result">
+    <Property Type="String" Name="TenDangNhap" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MatKhau" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="st_TraMayChieu_Result">
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="thongke1_Result">
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="MoTa" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="SoLuong" Nullable="true" />
+    <Property Type="String" Name="TenKho" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenNoiSD" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiGiao" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiMuon" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenBoPhan" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="NgayMuon" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DonViTinh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ThoiGianBaoHanh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ThongSoKyThuat" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="thongke2_Result">
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="MoTa" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="SoLuong" Nullable="true" />
+    <Property Type="String" Name="TenKho" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenNoiSD" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiTra" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiNhan" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenBoPhan" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="NgayTra" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DonViTinh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ThoiGianBaoHanh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ThongSoKyThuat" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="TrangThai" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="thongke3_Result">
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="MoTa" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="SoLuong" Nullable="true" />
+    <Property Type="String" Name="TenKho" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenNoiSD" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiGiao" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiMuon" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenBoPhan" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="NgayMuon" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DonViTinh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ThoiGianBaoHanh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ThongSoKyThuat" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="thongke4_Result">
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="MoTa" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="SoLuong" Nullable="true" />
+    <Property Type="String" Name="TenKho" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenNoiSD" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiTra" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiNhan" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenBoPhan" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="NgayTra" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DonViTinh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ThoiGianBaoHanh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ThongSoKyThuat" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="thongkedieuchuyen_Result">
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="MoTa" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="SoLuong" Nullable="false" />
+    <Property Type="String" Name="TenKho" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenNoiSD" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiDieuChuyen" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenBoPhan" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="NgayChuyen" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DonViTinh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ThoiGianBaoHanh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ThongSoKyThuat" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="thongketaisanchotra_Result">
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="MoTa" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="SoLuong" Nullable="true" />
+    <Property Type="String" Name="TenKho" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenNoiSD" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiTra" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiNhan" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenBoPhan" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="NgayTra" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DonViTinh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ThoiGianBaoHanh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ThongSoKyThuat" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="TrangThai" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="thongketaisandangchomuon_Result">
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="MoTa" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="SoLuong" Nullable="true" />
+    <Property Type="String" Name="TenKho" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenNoiSD" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiGiao" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaNguoiMuon" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="TenBoPhan" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="NgayMuon" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DonViTinh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ThoiGianBaoHanh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ThongSoKyThuat" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="TrangThai" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="Thongtincanhantaikhoan_Result">
+    <Property Type="String" Name="TenDangNhap" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MatKhau" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MaGiaoVien" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Quyen" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="NgayDangKy" Nullable="true" Precision="23" />
+    <Property Type="String" Name="MaGiaoVien1" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="HoTen" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="EMail" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="SoDienThoai" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="MaBoPhan" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="QueQuan" Nullable="true" MaxLength="255" />
+    <Property Type="DateTime" Name="NgaySinh" Nullable="true" Precision="23" />
+    <Property Type="String" Name="GioiTinh" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="TrinhDo" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="ChucVu" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ChuyenMon" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="timtheotentaisan_Result">
+    <Property Type="String" Name="MaTaiSan" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TenTaiSan" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="MaLoai" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ThongSoKyThuat" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="NamSD" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="XuatXu" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="ThoiGianBaoHanh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="DonViTinh" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="GhiChu" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MaKho" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MaNoiSD" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ContextKey" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Model" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="ProductVersion" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AspNetRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="QuanLyTaiSanModel.AspNetUserRoles" FromRole="AspNetRole" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="QuanLyTaiSanModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaim" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogin">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ProviderKey" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="QuanLyTaiSanModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogin" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="QuanLyTaiSanModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserClaim" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="QuanLyTaiSanModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserLogin" />
+    <NavigationProperty Name="AspNetRoles" Relationship="QuanLyTaiSanModel.AspNetUserRoles" FromRole="AspNetUser" ToRole="AspNetRole" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblBoPhan">
+    <Key>
+      <PropertyRef Name="MaBoPhan" />
+    </Key>
+    <Property Name="MaBoPhan" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaDonVi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TenBoPhan" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DienThoai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblCanBoGiaoViens" Relationship="QuanLyTaiSanModel.FK_tblCBGV_tblBoPhan" FromRole="tblBoPhan" ToRole="tblCanBoGiaoVien" />
+    <NavigationProperty Name="tblKhoLuuTrus" Relationship="QuanLyTaiSanModel.FK_tblKhoLuuTru_tblBoPhan" FromRole="tblBoPhan" ToRole="tblKhoLuuTru" />
+    <NavigationProperty Name="tblNoiSuDungs" Relationship="QuanLyTaiSanModel.FK_tblNoiSuDung_tblBoPhan" FromRole="tblBoPhan" ToRole="tblNoiSuDung" />
+  </EntityType>
+  <EntityType Name="tblCanBoGiaoVien">
+    <Key>
+      <PropertyRef Name="MaGiaoVien" />
+    </Key>
+    <Property Name="MaGiaoVien" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HoTen" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EMail" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="SoDienThoai" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MaBoPhan" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="QueQuan" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NgaySinh" Type="DateTime" Precision="3" />
+    <Property Name="GioiTinh" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="TrinhDo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ChucVu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ChuyenMon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblBoPhan" Relationship="QuanLyTaiSanModel.FK_tblCBGV_tblBoPhan" FromRole="tblCanBoGiaoVien" ToRole="tblBoPhan" />
+    <NavigationProperty Name="tblChiTietPhieuMuons" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblCanBoGiaoVien" FromRole="tblCanBoGiaoVien" ToRole="tblChiTietPhieuMuon" />
+    <NavigationProperty Name="tblChiTietPhieuTras" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblCanBoGiaoVien" FromRole="tblCanBoGiaoVien" ToRole="tblChiTietPhieuTra" />
+    <NavigationProperty Name="tblPhieuBanGiaos" Relationship="QuanLyTaiSanModel.FK_tblPhieuBanGiao_tblCanBoGiaoVien" FromRole="tblCanBoGiaoVien" ToRole="tblPhieuBanGiao" />
+    <NavigationProperty Name="tblQuaTrinhDiChuyens" Relationship="QuanLyTaiSanModel.FK_tblQuaTrinhDiChuyen_tblCanBoGiaoVien" FromRole="tblCanBoGiaoVien" ToRole="tblQuaTrinhDiChuyen" />
+    <NavigationProperty Name="tblTaiKhoans" Relationship="QuanLyTaiSanModel.FK_tblTaiKhoan_tblCanBoGiaoVien" FromRole="tblCanBoGiaoVien" ToRole="tblTaiKhoan" />
+  </EntityType>
+  <EntityType Name="tblChiTietChuyen">
+    <Key>
+      <PropertyRef Name="MaLanChuyen" />
+      <PropertyRef Name="MaTaiSan" />
+    </Key>
+    <Property Name="MaLanChuyen" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaTaiSan" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TinhTrang" Type="Int32" Nullable="false" />
+    <Property Name="MaKho" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SoLuong" Type="Int32" Nullable="false" />
+    <Property Name="MaNoiSD" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblKhoLuuTru" Relationship="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblKhoLuuTru" FromRole="tblChiTietChuyen" ToRole="tblKhoLuuTru" />
+    <NavigationProperty Name="tblNoiSuDung" Relationship="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblNoiSuDung" FromRole="tblChiTietChuyen" ToRole="tblNoiSuDung" />
+    <NavigationProperty Name="tblQuaTrinhDiChuyen" Relationship="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblQuaTrinhDiChuyen" FromRole="tblChiTietChuyen" ToRole="tblQuaTrinhDiChuyen" />
+    <NavigationProperty Name="tblTaiSan" Relationship="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblTaiSan" FromRole="tblChiTietChuyen" ToRole="tblTaiSan" />
+    <NavigationProperty Name="tblTinhTrang" Relationship="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblTinhTrang" FromRole="tblChiTietChuyen" ToRole="tblTinhTrang" />
+  </EntityType>
+  <EntityType Name="tblChiTietGiaoNhan">
+    <Key>
+      <PropertyRef Name="MaPhieuGiao" />
+      <PropertyRef Name="MaTaiSan" />
+    </Key>
+    <Property Name="MaPhieuGiao" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaTaiSan" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TyLeKhauHao" Type="Double" />
+    <Property Name="SoLuong" Type="Int32" />
+    <Property Name="DonGia" Type="Double" />
+    <Property Name="TinhTrang" Type="Int32" />
+    <Property Name="MaKho" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DonGiaKhauHao" Type="Double" />
+    <Property Name="NgayThangSD" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tblKhoLuuTru" Relationship="QuanLyTaiSanModel.FK_tblChiTietGiaoNhan_tblKhoLuuTru" FromRole="tblChiTietGiaoNhan" ToRole="tblKhoLuuTru" />
+    <NavigationProperty Name="tblPhieuBanGiao" Relationship="QuanLyTaiSanModel.FK_tblChiTietGiaoNhan_tblPhieuBanGiao" FromRole="tblChiTietGiaoNhan" ToRole="tblPhieuBanGiao" />
+    <NavigationProperty Name="tblTinhTrang" Relationship="QuanLyTaiSanModel.FK_tblChiTietGiaoNhan_tblTinhTrang1" FromRole="tblChiTietGiaoNhan" ToRole="tblTinhTrang" />
+  </EntityType>
+  <EntityType Name="tblChiTietPhieuMuon">
+    <Key>
+      <PropertyRef Name="MaPhieu" />
+      <PropertyRef Name="MaTaiSan" />
+    </Key>
+    <Property Name="MaPhieu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaTaiSan" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TinhTrang" Type="Int32" />
+    <Property Name="MaKho" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SoLuong" Type="Int32" />
+    <Property Name="MaNoiSD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaNguoiGiao" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaNguoiMuon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NgayMuon" Type="DateTime" Precision="3" />
+    <Property Name="TrangThai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblCanBoGiaoVien" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblCanBoGiaoVien" FromRole="tblChiTietPhieuMuon" ToRole="tblCanBoGiaoVien" />
+    <NavigationProperty Name="tblKhoLuuTru" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblKhoLuuTru" FromRole="tblChiTietPhieuMuon" ToRole="tblKhoLuuTru" />
+    <NavigationProperty Name="tblNoiSuDung" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblNoiSuDung" FromRole="tblChiTietPhieuMuon" ToRole="tblNoiSuDung" />
+    <NavigationProperty Name="tblTaiSan" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblTaiSan" FromRole="tblChiTietPhieuMuon" ToRole="tblTaiSan" />
+    <NavigationProperty Name="tblTinhTrang" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblTinhTrang" FromRole="tblChiTietPhieuMuon" ToRole="tblTinhTrang" />
+  </EntityType>
+  <EntityType Name="tblChiTietPhieuTra">
+    <Key>
+      <PropertyRef Name="MaPhieuTra" />
+      <PropertyRef Name="MaTaiSan" />
+    </Key>
+    <Property Name="MaPhieuTra" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaTaiSan" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaKho" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TinhTrang" Type="Int32" />
+    <Property Name="SoLuong" Type="Int32" />
+    <Property Name="MaNoiSD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaNguoiTra" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaNguoiNhan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NgayTra" Type="DateTime" Precision="3" />
+    <Property Name="TrangThai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblCanBoGiaoVien" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblCanBoGiaoVien" FromRole="tblChiTietPhieuTra" ToRole="tblCanBoGiaoVien" />
+    <NavigationProperty Name="tblKhoLuuTru" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblKhoLuuTru" FromRole="tblChiTietPhieuTra" ToRole="tblKhoLuuTru" />
+    <NavigationProperty Name="tblNoiSuDung" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblNoiSuDung" FromRole="tblChiTietPhieuTra" ToRole="tblNoiSuDung" />
+    <NavigationProperty Name="tblTaiSan" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblTaiSan" FromRole="tblChiTietPhieuTra" ToRole="tblTaiSan" />
+    <NavigationProperty Name="tblTinhTrang" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblTinhTrang" FromRole="tblChiTietPhieuTra" ToRole="tblTinhTrang" />
+  </EntityType>
+  <EntityType Name="tblDonVi">
+    <Key>
+      <PropertyRef Name="MaDonVi" />
+    </Key>
+    <Property Name="MaDonVi" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TenDonVi" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DiaChi" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SoDienThoai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Website" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EMail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LoaiDonVi" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblPhieuBanGiaos" Relationship="QuanLyTaiSanModel.FK_tblPhieuBanGiao_tblDonVi" FromRole="tblDonVi" ToRole="tblPhieuBanGiao" />
+    <NavigationProperty Name="tblTaiSans" Relationship="QuanLyTaiSanModel.FK_tblTaiSan_tblDonVi" FromRole="tblDonVi" ToRole="tblTaiSan" />
+  </EntityType>
+  <EntityType Name="tblDuAn">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="Descriptions" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblTaiSans" Relationship="QuanLyTaiSanModel.FK_tblTaiSan_tblDuAn" FromRole="tblDuAn" ToRole="tblTaiSan" />
+  </EntityType>
+  <EntityType Name="tblGroupAsset">
+    <Key>
+      <PropertyRef Name="GroupAssetId" />
+    </Key>
+    <Property Name="GroupAssetId" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Descriptions" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblLoaiTaiSans" Relationship="QuanLyTaiSanModel.FK_tblLoaiTaiSan_tblGroupAsset" FromRole="tblGroupAsset" ToRole="tblLoaiTaiSan" />
+  </EntityType>
+  <EntityType Name="tblKhoLuuTru">
+    <Key>
+      <PropertyRef Name="MaKho" />
+    </Key>
+    <Property Name="MaKho" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TenKho" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaBoPhan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GhiChu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblBoPhan" Relationship="QuanLyTaiSanModel.FK_tblKhoLuuTru_tblBoPhan" FromRole="tblKhoLuuTru" ToRole="tblBoPhan" />
+    <NavigationProperty Name="tblChiTietChuyens" Relationship="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblKhoLuuTru" FromRole="tblKhoLuuTru" ToRole="tblChiTietChuyen" />
+    <NavigationProperty Name="tblChiTietGiaoNhans" Relationship="QuanLyTaiSanModel.FK_tblChiTietGiaoNhan_tblKhoLuuTru" FromRole="tblKhoLuuTru" ToRole="tblChiTietGiaoNhan" />
+    <NavigationProperty Name="tblChiTietPhieuMuons" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblKhoLuuTru" FromRole="tblKhoLuuTru" ToRole="tblChiTietPhieuMuon" />
+    <NavigationProperty Name="tblChiTietPhieuTras" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblKhoLuuTru" FromRole="tblKhoLuuTru" ToRole="tblChiTietPhieuTra" />
+    <NavigationProperty Name="tblKhoTaiSans" Relationship="QuanLyTaiSanModel.FK_tblKhoTaiSan_tblKhoLuuTru" FromRole="tblKhoLuuTru" ToRole="tblKhoTaiSan" />
+  </EntityType>
+  <EntityType Name="tblKhoTaiSan">
+    <Key>
+      <PropertyRef Name="MaKho" />
+      <PropertyRef Name="MaTaiSan" />
+    </Key>
+    <Property Name="MaKho" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaTaiSan" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SoLuong" Type="Int32" />
+    <NavigationProperty Name="tblKhoLuuTru" Relationship="QuanLyTaiSanModel.FK_tblKhoTaiSan_tblKhoLuuTru" FromRole="tblKhoTaiSan" ToRole="tblKhoLuuTru" />
+    <NavigationProperty Name="tblTaiSan" Relationship="QuanLyTaiSanModel.FK_tblKhoTaiSan_tblTaiSan" FromRole="tblKhoTaiSan" ToRole="tblTaiSan" />
+  </EntityType>
+  <EntityType Name="tblLoaiTaiSan">
+    <Key>
+      <PropertyRef Name="MaLoai" />
+    </Key>
+    <Property Name="MaLoai" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TenLoai" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GroupAssetId" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Expiry" Type="Int32" />
+    <NavigationProperty Name="tblGroupAsset" Relationship="QuanLyTaiSanModel.FK_tblLoaiTaiSan_tblGroupAsset" FromRole="tblLoaiTaiSan" ToRole="tblGroupAsset" />
+    <NavigationProperty Name="tblTaiSans" Relationship="QuanLyTaiSanModel.FK_tblTaiSan_tblLoaiTaiSan" FromRole="tblLoaiTaiSan" ToRole="tblTaiSan" />
+  </EntityType>
+  <EntityType Name="tblNoiSuDung">
+    <Key>
+      <PropertyRef Name="MaNoiSD" />
+    </Key>
+    <Property Name="MaNoiSD" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TenNoiSD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaBoPhan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GhiChu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblBoPhan" Relationship="QuanLyTaiSanModel.FK_tblNoiSuDung_tblBoPhan" FromRole="tblNoiSuDung" ToRole="tblBoPhan" />
+    <NavigationProperty Name="tblChiTietChuyens" Relationship="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblNoiSuDung" FromRole="tblNoiSuDung" ToRole="tblChiTietChuyen" />
+    <NavigationProperty Name="tblChiTietPhieuMuons" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblNoiSuDung" FromRole="tblNoiSuDung" ToRole="tblChiTietPhieuMuon" />
+    <NavigationProperty Name="tblChiTietPhieuTras" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblNoiSuDung" FromRole="tblNoiSuDung" ToRole="tblChiTietPhieuTra" />
+    <NavigationProperty Name="tblNoiSuDungTaiSans" Relationship="QuanLyTaiSanModel.FK_tblNoiSuDungTaiSan_tblNoiSuDung" FromRole="tblNoiSuDung" ToRole="tblNoiSuDungTaiSan" />
+  </EntityType>
+  <EntityType Name="tblNoiSuDungTaiSan">
+    <Key>
+      <PropertyRef Name="MaNoiSD" />
+      <PropertyRef Name="MaTaiSan" />
+    </Key>
+    <Property Name="MaNoiSD" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaTaiSan" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SoLuong" Type="Int32" />
+    <NavigationProperty Name="tblNoiSuDung" Relationship="QuanLyTaiSanModel.FK_tblNoiSuDungTaiSan_tblNoiSuDung" FromRole="tblNoiSuDungTaiSan" ToRole="tblNoiSuDung" />
+    <NavigationProperty Name="tblTaiSan" Relationship="QuanLyTaiSanModel.FK_tblNoiSuDungTaiSan_tblTaiSan" FromRole="tblNoiSuDungTaiSan" ToRole="tblTaiSan" />
+  </EntityType>
+  <EntityType Name="tblPhieuBanGiao">
+    <Key>
+      <PropertyRef Name="MaPhieuGiao" />
+    </Key>
+    <Property Name="MaPhieuGiao" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaDonVi" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaGiaoVien" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NgayGiao" Type="DateTime" Precision="3" />
+    <Property Name="TenPhieuGiao" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblCanBoGiaoVien" Relationship="QuanLyTaiSanModel.FK_tblPhieuBanGiao_tblCanBoGiaoVien" FromRole="tblPhieuBanGiao" ToRole="tblCanBoGiaoVien" />
+    <NavigationProperty Name="tblChiTietGiaoNhans" Relationship="QuanLyTaiSanModel.FK_tblChiTietGiaoNhan_tblPhieuBanGiao" FromRole="tblPhieuBanGiao" ToRole="tblChiTietGiaoNhan" />
+    <NavigationProperty Name="tblDonVi" Relationship="QuanLyTaiSanModel.FK_tblPhieuBanGiao_tblDonVi" FromRole="tblPhieuBanGiao" ToRole="tblDonVi" />
+  </EntityType>
+  <EntityType Name="tblQuaTrinhDiChuyen">
+    <Key>
+      <PropertyRef Name="MaLanChuyen" />
+    </Key>
+    <Property Name="MaLanChuyen" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NgayChuyen" Type="DateTime" Precision="3" />
+    <Property Name="MaNguoiDieuChuyen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GhiChu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TenLanChuyen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblCanBoGiaoVien" Relationship="QuanLyTaiSanModel.FK_tblQuaTrinhDiChuyen_tblCanBoGiaoVien" FromRole="tblQuaTrinhDiChuyen" ToRole="tblCanBoGiaoVien" />
+    <NavigationProperty Name="tblChiTietChuyens" Relationship="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblQuaTrinhDiChuyen" FromRole="tblQuaTrinhDiChuyen" ToRole="tblChiTietChuyen" />
+  </EntityType>
+  <EntityType Name="tblTaiKhoan">
+    <Key>
+      <PropertyRef Name="TenDangNhap" />
+    </Key>
+    <Property Name="TenDangNhap" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MatKhau" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MaGiaoVien" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Quyen" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NgayDangKy" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tblCanBoGiaoVien" Relationship="QuanLyTaiSanModel.FK_tblTaiKhoan_tblCanBoGiaoVien" FromRole="tblTaiKhoan" ToRole="tblCanBoGiaoVien" />
+  </EntityType>
+  <EntityType Name="tblTaiSan">
+    <Key>
+      <PropertyRef Name="MaTaiSan" />
+    </Key>
+    <Property Name="MaTaiSan" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaLoai" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TenTaiSan" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ThongSoKyThuat" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NamSX" Type="Int32" />
+    <Property Name="XuatXu" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ThoiGianBaoHanh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DonViTinh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GhiChu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SerialNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NgayMua" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MaDuAn" Type="Int32" />
+    <Property Name="StatusId" Type="Int32" />
+    <Property Name="Soluong" Type="Int32" Nullable="false" />
+    <Property Name="MaDonVi" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NgayBanGiao" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="NguyenGia" Type="Double" Nullable="false" />
+    <Property Name="Image" Type="Binary" MaxLength="50" FixedLength="true" />
+    <Property Name="NgayDuKien" Type="DateTime" Precision="3" />
+    <Property Name="NgayBaoDuong" Type="DateTime" Precision="3" />
+    <Property Name="LoaiBaoDuong" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SoTien" Type="Double" />
+    <NavigationProperty Name="tblChiTietChuyens" Relationship="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblTaiSan" FromRole="tblTaiSan" ToRole="tblChiTietChuyen" />
+    <NavigationProperty Name="tblChiTietPhieuMuons" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblTaiSan" FromRole="tblTaiSan" ToRole="tblChiTietPhieuMuon" />
+    <NavigationProperty Name="tblChiTietPhieuTras" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblTaiSan" FromRole="tblTaiSan" ToRole="tblChiTietPhieuTra" />
+    <NavigationProperty Name="tblDonVi" Relationship="QuanLyTaiSanModel.FK_tblTaiSan_tblDonVi" FromRole="tblTaiSan" ToRole="tblDonVi" />
+    <NavigationProperty Name="tblDuAn" Relationship="QuanLyTaiSanModel.FK_tblTaiSan_tblDuAn" FromRole="tblTaiSan" ToRole="tblDuAn" />
+    <NavigationProperty Name="tblKhoTaiSans" Relationship="QuanLyTaiSanModel.FK_tblKhoTaiSan_tblTaiSan" FromRole="tblTaiSan" ToRole="tblKhoTaiSan" />
+    <NavigationProperty Name="tblLoaiTaiSan" Relationship="QuanLyTaiSanModel.FK_tblTaiSan_tblLoaiTaiSan" FromRole="tblTaiSan" ToRole="tblLoaiTaiSan" />
+    <NavigationProperty Name="tblNoiSuDungTaiSans" Relationship="QuanLyTaiSanModel.FK_tblNoiSuDungTaiSan_tblTaiSan" FromRole="tblTaiSan" ToRole="tblNoiSuDungTaiSan" />
+    <NavigationProperty Name="tblTinhTrang" Relationship="QuanLyTaiSanModel.FK_tblTaiSan_tblTinhTrang" FromRole="tblTaiSan" ToRole="tblTinhTrang" />
+  </EntityType>
+  <EntityType Name="tblTinhTrang">
+    <Key>
+      <PropertyRef Name="StatusId" />
+    </Key>
+    <Property Name="StatusId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Descriptions" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tblChiTietChuyens" Relationship="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblTinhTrang" FromRole="tblTinhTrang" ToRole="tblChiTietChuyen" />
+    <NavigationProperty Name="tblChiTietGiaoNhans" Relationship="QuanLyTaiSanModel.FK_tblChiTietGiaoNhan_tblTinhTrang1" FromRole="tblTinhTrang" ToRole="tblChiTietGiaoNhan" />
+    <NavigationProperty Name="tblChiTietPhieuMuons" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblTinhTrang" FromRole="tblTinhTrang" ToRole="tblChiTietPhieuMuon" />
+    <NavigationProperty Name="tblChiTietPhieuTras" Relationship="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblTinhTrang" FromRole="tblTinhTrang" ToRole="tblChiTietPhieuTra" />
+    <NavigationProperty Name="tblTaiSans" Relationship="QuanLyTaiSanModel.FK_tblTaiSan_tblTinhTrang" FromRole="tblTinhTrang" ToRole="tblTaiSan" />
+  </EntityType>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Type="QuanLyTaiSanModel.AspNetUser" Role="AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="QuanLyTaiSanModel.AspNetUserClaim" Role="AspNetUserClaim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaim">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Type="QuanLyTaiSanModel.AspNetUser" Role="AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="QuanLyTaiSanModel.AspNetUserLogin" Role="AspNetUserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogin">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblCBGV_tblBoPhan">
+    <End Type="QuanLyTaiSanModel.tblBoPhan" Role="tblBoPhan" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="QuanLyTaiSanModel.tblCanBoGiaoVien" Role="tblCanBoGiaoVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblBoPhan">
+        <PropertyRef Name="MaBoPhan" />
+      </Principal>
+      <Dependent Role="tblCanBoGiaoVien">
+        <PropertyRef Name="MaBoPhan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblKhoLuuTru_tblBoPhan">
+    <End Type="QuanLyTaiSanModel.tblBoPhan" Role="tblBoPhan" Multiplicity="0..1" />
+    <End Type="QuanLyTaiSanModel.tblKhoLuuTru" Role="tblKhoLuuTru" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblBoPhan">
+        <PropertyRef Name="MaBoPhan" />
+      </Principal>
+      <Dependent Role="tblKhoLuuTru">
+        <PropertyRef Name="MaBoPhan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblNoiSuDung_tblBoPhan">
+    <End Type="QuanLyTaiSanModel.tblBoPhan" Role="tblBoPhan" Multiplicity="0..1" />
+    <End Type="QuanLyTaiSanModel.tblNoiSuDung" Role="tblNoiSuDung" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblBoPhan">
+        <PropertyRef Name="MaBoPhan" />
+      </Principal>
+      <Dependent Role="tblNoiSuDung">
+        <PropertyRef Name="MaBoPhan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblChiTietPhieuMuon_tblCanBoGiaoVien">
+    <End Type="QuanLyTaiSanModel.tblCanBoGiaoVien" Role="tblCanBoGiaoVien" Multiplicity="0..1" />
+    <End Type="QuanLyTaiSanModel.tblChiTietPhieuMuon" Role="tblChiTietPhieuMuon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCanBoGiaoVien">
+        <PropertyRef Name="MaGiaoVien" />
+      </Principal>
+      <Dependent Role="tblChiTietPhieuMuon">
+        <PropertyRef Name="MaNguoiGiao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblChiTietPhieuTra_tblCanBoGiaoVien">
+    <End Type="QuanLyTaiSanModel.tblCanBoGiaoVien" Role="tblCanBoGiaoVien" Multiplicity="0..1" />
+    <End Type="QuanLyTaiSanModel.tblChiTietPhieuTra" Role="tblChiTietPhieuTra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCanBoGiaoVien">
+        <PropertyRef Name="MaGiaoVien" />
+      </Principal>
+      <Dependent Role="tblChiTietPhieuTra">
+        <PropertyRef Name="MaNguoiNhan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPhieuBanGiao_tblCanBoGiaoVien">
+    <End Type="QuanLyTaiSanModel.tblCanBoGiaoVien" Role="tblCanBoGiaoVien" Multiplicity="1" />
+    <End Type="QuanLyTaiSanModel.tblPhieuBanGiao" Role="tblPhieuBanGiao" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCanBoGiaoVien">
+        <PropertyRef Name="MaGiaoVien" />
+      </Principal>
+      <Dependent Role="tblPhieuBanGiao">
+        <PropertyRef Name="MaGiaoVien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblQuaTrinhDiChuyen_tblCanBoGiaoVien">
+    <End Type="QuanLyTaiSanModel.tblCanBoGiaoVien" Role="tblCanBoGiaoVien" Multiplicity="0..1" />
+    <End Type="QuanLyTaiSanModel.tblQuaTrinhDiChuyen" Role="tblQuaTrinhDiChuyen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCanBoGiaoVien">
+        <PropertyRef Name="MaGiaoVien" />
+      </Principal>
+      <Dependent Role="tblQuaTrinhDiChuyen">
+        <PropertyRef Name="MaNguoiDieuChuyen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTaiKhoan_tblCanBoGiaoVien">
+    <End Type="QuanLyTaiSanModel.tblCanBoGiaoVien" Role="tblCanBoGiaoVien" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="QuanLyTaiSanModel.tblTaiKhoan" Role="tblTaiKhoan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCanBoGiaoVien">
+        <PropertyRef Name="MaGiaoVien" />
+      </Principal>
+      <Dependent Role="tblTaiKhoan">
+        <PropertyRef Name="MaGiaoVien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblChiTietChuyen_tblKhoLuuTru">
+    <End Type="QuanLyTaiSanModel.tblKhoLuuTru" Role="tblKhoLuuTru" Multiplicity="1" />
+    <End Type="QuanLyTaiSanModel.tblChiTietChuyen" Role="tblChiTietChuyen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblKhoLuuTru">
+        <PropertyRef Name="MaKho" />
+      </Principal>
+      <Dependent Role="tblChiTietChuyen">
+        <PropertyRef Name="MaKho" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblChiTietChuyen_tblNoiSuDung">
+    <End Type="QuanLyTaiSanModel.tblNoiSuDung" Role="tblNoiSuDung" Multiplicity="1" />
+    <End Type="QuanLyTaiSanModel.tblChiTietChuyen" Role="tblChiTietChuyen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblNoiSuDung">
+        <PropertyRef Name="MaNoiSD" />
+      </Principal>
+      <Dependent Role="tblChiTietChuyen">
+        <PropertyRef Name="MaNoiSD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblChiTietChuyen_tblQuaTrinhDiChuyen">
+    <End Type="QuanLyTaiSanModel.tblQuaTrinhDiChuyen" Role="tblQuaTrinhDiChuyen" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="QuanLyTaiSanModel.tblChiTietChuyen" Role="tblChiTietChuyen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblQuaTrinhDiChuyen">
+        <PropertyRef Name="MaLanChuyen" />
+      </Principal>
+      <Dependent Role="tblChiTietChuyen">
+        <PropertyRef Name="MaLanChuyen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblChiTietChuyen_tblTaiSan">
+    <End Type="QuanLyTaiSanModel.tblTaiSan" Role="tblTaiSan" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="QuanLyTaiSanModel.tblChiTietChuyen" Role="tblChiTietChuyen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTaiSan">
+        <PropertyRef Name="MaTaiSan" />
+      </Principal>
+      <Dependent Role="tblChiTietChuyen">
+        <PropertyRef Name="MaTaiSan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblChiTietChuyen_tblTinhTrang">
+    <End Type="QuanLyTaiSanModel.tblTinhTrang" Role="tblTinhTrang" Multiplicity="1" />
+    <End Type="QuanLyTaiSanModel.tblChiTietChuyen" Role="tblChiTietChuyen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTinhTrang">
+        <PropertyRef Name="StatusId" />
+      </Principal>
+      <Dependent Role="tblChiTietChuyen">
+        <PropertyRef Name="TinhTrang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblChiTietGiaoNhan_tblKhoLuuTru">
+    <End Type="QuanLyTaiSanModel.tblKhoLuuTru" Role="tblKhoLuuTru" Multiplicity="0..1" />
+    <End Type="QuanLyTaiSanModel.tblChiTietGiaoNhan" Role="tblChiTietGiaoNhan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblKhoLuuTru">
+        <PropertyRef Name="MaKho" />
+      </Principal>
+      <Dependent Role="tblChiTietGiaoNhan">
+        <PropertyRef Name="MaKho" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblChiTietGiaoNhan_tblPhieuBanGiao">
+    <End Type="QuanLyTaiSanModel.tblPhieuBanGiao" Role="tblPhieuBanGiao" Multiplicity="1" />
+    <End Type="QuanLyTaiSanModel.tblChiTietGiaoNhan" Role="tblChiTietGiaoNhan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPhieuBanGiao">
+        <PropertyRef Name="MaPhieuGiao" />
+      </Principal>
+      <Dependent Role="tblChiTietGiaoNhan">
+        <PropertyRef Name="MaPhieuGiao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblChiTietGiaoNhan_tblTinhTrang1">
+    <End Type="QuanLyTaiSanModel.tblTinhTrang" Role="tblTinhTrang" Multiplicity="0..1" />
+    <End Type="QuanLyTaiSanModel.tblChiTietGiaoNhan" Role="tblChiTietGiaoNhan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTinhTrang">
+        <PropertyRef Name="StatusId" />
+      </Principal>
+      <Dependent Role="tblChiTietGiaoNhan">
+        <PropertyRef Name="TinhTrang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblChiTietPhieuMuon_tblKhoLuuTru">
+    <End Type="QuanLyTaiSanModel.tblKhoLuuTru" Role="tblKhoLuuTru" Multiplicity="0..1" />
+    <End Type="QuanLyTaiSanModel.tblChiTietPhieuMuon" Role="tblChiTietPhieuMuon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblKhoLuuTru">
+        <PropertyRef Name="MaKho" />
+      </Principal>
+      <Dependent Role="tblChiTietPhieuMuon">
+        <PropertyRef Name="MaKho" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblChiTietPhieuMuon_tblNoiSuDung">
+    <End Type="QuanLyTaiSanModel.tblNoiSuDung" Role="tblNoiSuDung" Multiplicity="0..1" />
+    <End Type="QuanLyTaiSanModel.tblChiTietPhieuMuon" Role="tblChiTietPhieuMuon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblNoiSuDung">
+        <PropertyRef Name="MaNoiSD" />
+      </Principal>
+      <Dependent Role="tblChiTietPhieuMuon">
+        <PropertyRef Name="MaNoiSD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblChiTietPhieuMuon_tblTaiSan">
+    <End Type="QuanLyTaiSanModel.tblTaiSan" Role="tblTaiSan" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="QuanLyTaiSanModel.tblChiTietPhieuMuon" Role="tblChiTietPhieuMuon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTaiSan">
+        <PropertyRef Name="MaTaiSan" />
+      </Principal>
+      <Dependent Role="tblChiTietPhieuMuon">
+        <PropertyRef Name="MaTaiSan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblChiTietPhieuMuon_tblTinhTrang">
+    <End Type="QuanLyTaiSanModel.tblTinhTrang" Role="tblTinhTrang" Multiplicity="0..1" />
+    <End Type="QuanLyTaiSanModel.tblChiTietPhieuMuon" Role="tblChiTietPhieuMuon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTinhTrang">
+        <PropertyRef Name="StatusId" />
+      </Principal>
+      <Dependent Role="tblChiTietPhieuMuon">
+        <PropertyRef Name="TinhTrang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblChiTietPhieuTra_tblKhoLuuTru">
+    <End Type="QuanLyTaiSanModel.tblKhoLuuTru" Role="tblKhoLuuTru" Multiplicity="0..1" />
+    <End Type="QuanLyTaiSanModel.tblChiTietPhieuTra" Role="tblChiTietPhieuTra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblKhoLuuTru">
+        <PropertyRef Name="MaKho" />
+      </Principal>
+      <Dependent Role="tblChiTietPhieuTra">
+        <PropertyRef Name="MaKho" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblChiTietPhieuTra_tblNoiSuDung">
+    <End Type="QuanLyTaiSanModel.tblNoiSuDung" Role="tblNoiSuDung" Multiplicity="0..1" />
+    <End Type="QuanLyTaiSanModel.tblChiTietPhieuTra" Role="tblChiTietPhieuTra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblNoiSuDung">
+        <PropertyRef Name="MaNoiSD" />
+      </Principal>
+      <Dependent Role="tblChiTietPhieuTra">
+        <PropertyRef Name="MaNoiSD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblChiTietPhieuTra_tblTaiSan">
+    <End Type="QuanLyTaiSanModel.tblTaiSan" Role="tblTaiSan" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="QuanLyTaiSanModel.tblChiTietPhieuTra" Role="tblChiTietPhieuTra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTaiSan">
+        <PropertyRef Name="MaTaiSan" />
+      </Principal>
+      <Dependent Role="tblChiTietPhieuTra">
+        <PropertyRef Name="MaTaiSan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblChiTietPhieuTra_tblTinhTrang">
+    <End Type="QuanLyTaiSanModel.tblTinhTrang" Role="tblTinhTrang" Multiplicity="0..1" />
+    <End Type="QuanLyTaiSanModel.tblChiTietPhieuTra" Role="tblChiTietPhieuTra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTinhTrang">
+        <PropertyRef Name="StatusId" />
+      </Principal>
+      <Dependent Role="tblChiTietPhieuTra">
+        <PropertyRef Name="TinhTrang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPhieuBanGiao_tblDonVi">
+    <End Type="QuanLyTaiSanModel.tblDonVi" Role="tblDonVi" Multiplicity="1" />
+    <End Type="QuanLyTaiSanModel.tblPhieuBanGiao" Role="tblPhieuBanGiao" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDonVi">
+        <PropertyRef Name="MaDonVi" />
+      </Principal>
+      <Dependent Role="tblPhieuBanGiao">
+        <PropertyRef Name="MaDonVi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTaiSan_tblDonVi">
+    <End Type="QuanLyTaiSanModel.tblDonVi" Role="tblDonVi" Multiplicity="1" />
+    <End Type="QuanLyTaiSanModel.tblTaiSan" Role="tblTaiSan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDonVi">
+        <PropertyRef Name="MaDonVi" />
+      </Principal>
+      <Dependent Role="tblTaiSan">
+        <PropertyRef Name="MaDonVi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTaiSan_tblDuAn">
+    <End Type="QuanLyTaiSanModel.tblDuAn" Role="tblDuAn" Multiplicity="0..1" />
+    <End Type="QuanLyTaiSanModel.tblTaiSan" Role="tblTaiSan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDuAn">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblTaiSan">
+        <PropertyRef Name="MaDuAn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLoaiTaiSan_tblGroupAsset">
+    <End Type="QuanLyTaiSanModel.tblGroupAsset" Role="tblGroupAsset" Multiplicity="1" />
+    <End Type="QuanLyTaiSanModel.tblLoaiTaiSan" Role="tblLoaiTaiSan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGroupAsset">
+        <PropertyRef Name="GroupAssetId" />
+      </Principal>
+      <Dependent Role="tblLoaiTaiSan">
+        <PropertyRef Name="GroupAssetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblKhoTaiSan_tblKhoLuuTru">
+    <End Type="QuanLyTaiSanModel.tblKhoLuuTru" Role="tblKhoLuuTru" Multiplicity="1" />
+    <End Type="QuanLyTaiSanModel.tblKhoTaiSan" Role="tblKhoTaiSan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblKhoLuuTru">
+        <PropertyRef Name="MaKho" />
+      </Principal>
+      <Dependent Role="tblKhoTaiSan">
+        <PropertyRef Name="MaKho" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblKhoTaiSan_tblTaiSan">
+    <End Type="QuanLyTaiSanModel.tblTaiSan" Role="tblTaiSan" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="QuanLyTaiSanModel.tblKhoTaiSan" Role="tblKhoTaiSan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTaiSan">
+        <PropertyRef Name="MaTaiSan" />
+      </Principal>
+      <Dependent Role="tblKhoTaiSan">
+        <PropertyRef Name="MaTaiSan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTaiSan_tblLoaiTaiSan">
+    <End Type="QuanLyTaiSanModel.tblLoaiTaiSan" Role="tblLoaiTaiSan" Multiplicity="1" />
+    <End Type="QuanLyTaiSanModel.tblTaiSan" Role="tblTaiSan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblLoaiTaiSan">
+        <PropertyRef Name="MaLoai" />
+      </Principal>
+      <Dependent Role="tblTaiSan">
+        <PropertyRef Name="MaLoai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblNoiSuDungTaiSan_tblNoiSuDung">
+    <End Type="QuanLyTaiSanModel.tblNoiSuDung" Role="tblNoiSuDung" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="QuanLyTaiSanModel.tblNoiSuDungTaiSan" Role="tblNoiSuDungTaiSan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblNoiSuDung">
+        <PropertyRef Name="MaNoiSD" />
+      </Principal>
+      <Dependent Role="tblNoiSuDungTaiSan">
+        <PropertyRef Name="MaNoiSD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblNoiSuDungTaiSan_tblTaiSan">
+    <End Type="QuanLyTaiSanModel.tblTaiSan" Role="tblTaiSan" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="QuanLyTaiSanModel.tblNoiSuDungTaiSan" Role="tblNoiSuDungTaiSan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTaiSan">
+        <PropertyRef Name="MaTaiSan" />
+      </Principal>
+      <Dependent Role="tblNoiSuDungTaiSan">
+        <PropertyRef Name="MaTaiSan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTaiSan_tblTinhTrang">
+    <End Type="QuanLyTaiSanModel.tblTinhTrang" Role="tblTinhTrang" Multiplicity="0..1" />
+    <End Type="QuanLyTaiSanModel.tblTaiSan" Role="tblTaiSan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTinhTrang">
+        <PropertyRef Name="StatusId" />
+      </Principal>
+      <Dependent Role="tblTaiSan">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Type="QuanLyTaiSanModel.AspNetRole" Role="AspNetRole" Multiplicity="*" />
+    <End Type="QuanLyTaiSanModel.AspNetUser" Role="AspNetUser" Multiplicity="*" />
+  </Association>
+</Schema>

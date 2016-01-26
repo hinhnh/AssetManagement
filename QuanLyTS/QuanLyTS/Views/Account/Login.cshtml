@@ -1,0 +1,105 @@
+﻿@model IdentitySample.Models.LoginViewModel
+
+@{
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+    ViewBag.Title = "Đăng nhập";
+}
+
+@*<h2>@ViewBag.Title.</h2>
+<div class="row">
+    <div class="col-md-8">
+        <section id="loginForm">
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" })) {
+                @Html.AntiForgeryToken()                
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <div class="checkbox">
+                            @Html.CheckBoxFor(m => m.RememberMe)
+                            @Html.LabelFor(m => m.RememberMe)
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Log in" class="btn btn-default" />
+                    </div>
+                </div>                
+                <p>
+                    @Html.ActionLink("Forget your password?", "ForgotPassword")
+                </p>
+            }
+        </section>
+    </div>
+
+</div>*@
+@using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+<center>
+    <table cellpadding="0" cellspacing="0" border="1px" class="style1">
+
+
+        <tr>
+            <td colspan="2" class="dau" align="center" style="font-family: Tahoma; font-size:16px;font-style:normal">
+                Đăng nhập
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="height: 30px"></td>
+        </tr>
+        <tr>
+            <td align="left" style="padding-left: 7px; line-height: 25px; width: 30%;">
+                Tên đăng nhập
+            </td>
+            <td align="left" style="line-height: 28px; padding-left: 3px;">                
+                <input name="Email" type="text" id="txtUserName" class="style3" style="height:25px;width:96%;" />
+                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+            </td>
+        </tr>
+
+        <tr>
+            <td align="left" style="padding-left: 10px; line-height: 28px">
+                Mật khẩu
+            </td>
+            <td align="left" style="line-height: 28px; padding-left: 3px;">                
+                <input name="Password" type="password" id="txtPassword" style="height:25px;width:96%;" />
+                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="2" align="center" class="dongdieukhien" valign="middle">
+                <input type="submit" value="Đăng nhập" id="btDangNhap" style="height:30px;width:112px;" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="Hủy"  style="height:30px;width:112px;" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            </td>
+        </tr>
+        @*<tr>
+            <td align="center" style="padding-left: 8px; line-height: 28px" colspan="2">
+                <span id="lblthongbao" style="color:Red;font-size:12pt;font-weight:bold;"></span>
+                <a id="hplQuenMK" href="/Account/ForgotPassword">
+                    Nhấn vào đây nếu quên mật khẩu
+                </a>
+
+            </td>
+        </tr>*@
+    </table>
+</center>
+}

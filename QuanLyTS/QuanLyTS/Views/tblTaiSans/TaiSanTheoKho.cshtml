@@ -1,0 +1,121 @@
+﻿@using QuanLyTS.Models
+@model QuanLyTS.Models.ThongKeMODEL
+
+@{
+    ViewBag.Title = "TaiSanTheoKho";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Thống kê theo kho</h2>
+
+<form method="post" action="/tblTaiSans/TaiSanTheoKho">
+    <div class="row">
+        <div class="col-sm-4">
+            Chọn Kho
+        </div>
+        <div class="col-sm-8">
+            <select id="selectkho" name="id">
+                @foreach (var item in Model.lst_Khos)
+            {
+                    <option value="@item.MaKho">@item.TenKho</option>
+                }
+            </select>
+        </div>
+    </div>
+    <div class="row" style="padding:10px;">
+        <div class="col-md-3"></div>
+        <div class="col-md-5">
+            <button class="btn btn-success" type="submit">Thống kê</button>
+            <button class="btn btn-info" type="button">Xuất Excel</button>
+        </div>
+    </div>
+    
+</form>
+
+@try
+{
+<div id="tds" class="@Model.kholuutrus.MaKho" style="display:none;"></div>
+<script lang="javascript">
+    $('#selectkho option').each(function () {
+        var d = $('#tds').attr("class");
+        if($(this).attr('value') == d)
+        {
+            $(this).attr('selected','selected');
+        }
+
+    });
+</script>
+<table class="table">
+    <tr>
+        <th>
+            Tên Tài Sản
+        </th>
+        <th>
+            Tên Kho
+        </th>
+        <th>
+            Thông số kỹ thuật
+        </th>
+        <th>
+            Năm SD
+        </th>
+        <th>
+            Xuất sứ
+        </th>
+        <th>
+            Thời gian bảo hành
+        </th>
+        <th>
+            Đơn vị tính
+        </th>
+        <th>
+            Ghi chú
+        </th>
+        <th>
+            Tên loại
+        </th>        
+    </tr>
+    
+        @foreach (var item1 in Model.tblKho)
+        {
+            foreach (var item in Model.tblTaiSan.Where(a => a.MaTaiSan == item1.MaTaiSan))
+            {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenTaiSan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.kholuutrus.TenKho)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThongSoKyThuat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NamSX)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.XuatXu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThoiGianBaoHanh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DonViTinh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GhiChu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tblLoaiTaiSan.TenLoai)
+            </td>           
+        </tr>
+            }
+        }
+    
+
+</table>
+}
+catch
+{
+}
+<br />

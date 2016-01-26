@@ -1,0 +1,92 @@
+﻿@using QuanLyTS.Models
+@model QuanLyTS.Models.TaiSanDieuChuyen
+@{    
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    QuanLyTSEntities db = new QuanLyTSEntities();
+}
+
+<h2>Thông tin tài sản điều chuyển</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Mã nơi SD
+        </th>
+        <th>
+            Mã tài sản
+        </th>
+        <th>
+            Tên tài sản
+        </th>
+        <th>
+            Nhóm tài sản
+        </th>
+        <th>
+            Số lượng
+        </th>
+        <th>
+            Nơi SD
+        </th>
+        <th>
+            Đơn vị tính
+        </th>
+        <th>
+            Thông số kỹ thuật
+        </th>
+        <th>
+            Thời gian bảo hành
+        </th>
+        <th>
+            Mã bộ phận
+        </th>
+        <th>
+            Ghi chú
+        </th>
+    </tr>
+
+    @foreach (var item in Model.noisds)
+    {
+
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaNoiSD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaTaiSan)
+            </td>
+            <td>
+                @db.tblTaiSans.Single(a=>a.MaTaiSan == item.MaTaiSan).TenTaiSan
+            </td>
+            <td>
+                @db.tblTaiSans.Single(a => a.MaTaiSan == item.MaTaiSan).tblLoaiTaiSan.TenLoai
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoLuong)
+            </td>
+            <td>
+                @db.tblNoiSuDungs.Single(a=>a.MaNoiSD == item.MaNoiSD).TenNoiSD
+            </td>
+            <td>
+                @db.tblNoiSuDungs.Single(a => a.MaNoiSD == item.MaNoiSD).tblBoPhan.TenBoPhan
+            </td>
+            <td>
+                @db.tblTaiSans.Single(a => a.MaTaiSan == item.MaTaiSan).DonViTinh
+            </td>
+            <td>
+                @db.tblTaiSans.Single(a => a.MaTaiSan == item.MaTaiSan).ThongSoKyThuat
+            </td>
+            <td>
+                @db.tblTaiSans.Single(a => a.MaTaiSan == item.MaTaiSan).ThoiGianBaoHanh
+            </td>
+            <td>
+                @db.tblNoiSuDungs.Single(a => a.MaNoiSD == item.MaNoiSD).GhiChu
+            </td>
+        </tr>
+    }
+
+
+</table>
+
+
+

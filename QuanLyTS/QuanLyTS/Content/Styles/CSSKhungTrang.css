@@ -1,0 +1,123 @@
+﻿body
+{
+}
+.divMax
+{
+	width: 100%;
+	border: 1px solid silver;
+	-moz-border-radius: 8px 8px 0px 0px;
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+}
+.table
+{
+	width: 100%;
+	padding-left: 20px;
+}
+.tdTrai
+{
+	width: 20%;
+	text-align: right;
+	text-decoration: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.tdGiua
+{
+	width: 2%;
+}
+.tdPhai
+{
+	width: 40%;
+	text-align: left;
+	text-decoration: 5px;
+}
+.tdLableKT
+{
+	width: 37%;
+}
+.textbox
+{
+	width: 250px;
+}
+.divtable
+{
+	padding-left: 20px;
+}
+.divTieuDe
+{
+	width: 100%;
+	height: 25px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	text-align: center;
+	background-color: silver;
+	-moz-border-radius: 8px 8px 0px 0px;
+	color: blue;
+}
+.divGridView
+{
+	padding-top: 20px;	
+	padding-left: 20px;
+	padding-right: 10px;
+}
+.button
+{
+	width: 90px;
+	height: 26px;
+}
+
+.divMax
+{
+	width: 100%;
+	border: 1px solid silver;
+	-moz-border-radius: 8px 8px 0px 0px;
+	margin-bottom: 10px;
+}
+.table1
+{
+	width: 50%;
+	padding-left: 10px;
+}
+.table2
+{
+	width: 100%;
+	padding-left: 10px;
+}
+.tdTrai1
+{
+	width: 42%;
+	text-align: left;
+	
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.tdGiua1
+{
+	width: 0%;
+}
+.tdPhai1
+{
+	text-align: left;
+	text-decoration: 5px;
+	width: 35%;
+}
+.tdLableKT1
+{
+	width: 22%;
+}
+.textbox1
+{
+	width: 200px;
+}
+.divtable1
+{
+	padding-left: 5px;padding-right:5px;
+}
+.divGridView1
+{
+	padding-top: 10px;	
+	padding-left: 5px;
+	padding-right: 10px;
+}

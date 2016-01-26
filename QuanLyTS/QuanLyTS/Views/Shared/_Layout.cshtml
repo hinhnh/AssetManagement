@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        WEBSITE QUẢN LÝ TÀI SẢN
+    </title>
+    <link href="/Content/Styles/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/Styles/Stylesheet2.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/Styles/Mycss.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/Styles/adminstyle.css" rel="stylesheet" type="text/css" />
+
+    <link href="~/Content/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+   
+    <script src="~/Scripts/jquery-2.1.1.min.js"></script>    
+    <link href="~/Content/bootstrap/bootstrap-datepicker.css" rel="stylesheet" />
+    <script src="~/Content/bootstrap/bootstrap-datepicker.js"></script>      
+   
+
+</head>
+<body>
+    <div class="Trangchu">
+
+        @Html.Partial("_HeaderPartial")
+
+        <div class="main-content">
+          @Html.Partial("_Menu_Doc_Partial")
+
+            <div class="content">
+                @RenderBody()
+            </div>
+        </div>
+
+        
+            @Html.Partial("_FooterPartial")
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\bin\Debug\QLTS(29-11-2015).exe
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\bin\Debug\QLTS(29-11-2015).pdb
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.DangNhap.resources
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.Main.resources
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.NhapMoiTS.resources
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.Properties.Resources.resources
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS(29-11-2015).csproj.GenerateResource.Cache
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS(29-11-2015).exe
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS(29-11-2015).pdb
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.CapNhapSuaChua.resources
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.DanhMucTaiSanVaDonVi.resources
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.DieuChuyen.resources
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.PhanQuyen.resources
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.ThanhLy.resources
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.ThietLapKhauHao.resources
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.ThongKeTheoDonVi.resources
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.ThongKeTheoLoai.resources
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.TimKiem.resources
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.BieuMau.resources
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.ChiaSe.resources
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.DeXuatTuDonVi.resources
+c:\users\tran nguyen huong.desktop-nh4p62i\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.HuongDanSuDung.resources
+C:\Users\Tran Nguyen Huong.DESKTOP-NH4P62I\Documents\Visual Studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS(29-11-2015).csprojResolveAssemblyReference.cache
+C:\Users\Tran Nguyen Huong.DESKTOP-NH4P62I\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.TrangCapTaiSan.resources
+C:\Users\Tran Nguyen Huong.DESKTOP-NH4P62I\documents\visual studio 2010\Projects\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.KeHoachMuaSam.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS(29-11-2015).exe
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS(29-11-2015).pdb
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\bin\Debug\QLTS(29-11-2015).exe
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\bin\Debug\QLTS(29-11-2015).pdb
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.BieuMau.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.CapNhapSuaChua.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.ChiaSe.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.DangNhap.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.DanhMucTaiSanVaDonVi.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.DeXuatTuDonVi.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.DieuChuyen.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.HuongDanSuDung.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.KeHoachMuaSam.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.Main.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.NhapMoiTS.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.PhanQuyen.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.Properties.Resources.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.ThanhLy.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.ThietLapKhauHao.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.ThongKeTheoDonVi.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.ThongKeTheoLoai.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.TimKiem.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.TrangCapTaiSan.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.frmBaoCaoKhauHao.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.frmKiemKeTS.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.frmPhieuKiemKeTS.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.frmBienBanThanhLy.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(29-11-2015)\QLTS(29-11-2015)\obj\x86\Debug\QLTS_29_11_2015_.PhieuDieuChuyenTS.resources
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(5-1-2016)\QLTS(29-11-2015)\obj\x86\Debug\QLTS(29-11-2015).exe
+E:\CDSPTW1\P.NCKH&HTQT\Viet Phan mem QLTS\QLTS(5-1-2016)\QLTS(29-11-2015)\obj\x86\Debug\QLTS(29-11-2015).pdb

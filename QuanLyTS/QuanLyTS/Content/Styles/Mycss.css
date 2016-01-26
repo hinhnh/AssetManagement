@@ -1,0 +1,77 @@
+﻿body {
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;		
+}
+/*menu trang mester*/
+.GioiThieuSanPham
+
+{
+	color:#6B8E23;
+	background: #D3D3D3;
+	height: 30px;
+	line-height: 30px;
+	width: 785px;
+	margin: 0 auto 30px auto;
+	border: 1px solid #A2D2EA;
+	text-align: left;
+	}
+	.MeNuTieuDe
+	{
+		
+	background:#87CEFA;
+		}
+
+/* san pham nhieu ng xem */
+#spnhieunguoixem 
+{
+	color:#FF8c00;
+	background: #F1F8FC;
+	height: 30px;
+	line-height: 30px;
+	width: 790px;
+	margin: 0 auto 30px auto;
+	border: 1px solid #A2D2EA;
+	text-align: left;
+}
+#spnhieunguoixem ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* san pham moi */
+
+#spmoi
+{
+	color:#FF8c00;
+	background: #F1F8FC;
+	height: 30px;
+	line-height: 30px;
+	width: 785px;
+	margin: 0 auto 30px auto;
+	border: 1px solid #A2D2EA;
+	text-align: left;
+}
+#spmoi ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/*SP cao cap*/
+#spcaocap
+{
+	color:#FF8c00;
+	background: #F1F8FC;
+	height: 30px;
+	line-height: 30px;
+	width: 785px;
+	margin: 0 auto 30px auto;
+	border: 1px solid #A2D2EA;
+	text-align: left;
+}
+#spcaocap ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}

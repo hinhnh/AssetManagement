@@ -1,0 +1,251 @@
+﻿@model QuanLyTS.Models.tblTaiSan
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Thêm mới tài sản</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.tblLoaiTaiSan.GroupAssetId, "Nhóm Tài Sản(*)", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                @Html.DropDownListFor(model => model.tblLoaiTaiSan.GroupAssetId, ViewBag.NhomTS as SelectList, "--Chọn Nhóm Tài Sản--", htmlAttributes: new { @class = "form-control", @onchange = "GetTypeAsset(this.value,'');" })
+
+                @Html.ValidationMessageFor(model => model.tblLoaiTaiSan.GroupAssetId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaLoai, "Loại Tài Sản(*)", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                <select id="MaLoai" name="MaLoai" class="form-control" onload="onDropdownChange(this.value);" onchange="onDropdownChange(this.value);"></select>
+
+                @Html.ValidationMessageFor(model => model.MaLoai, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaTaiSan, "Mã tài sản(*)", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.MaTaiSan, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                @Html.ValidationMessageFor(model => model.MaTaiSan, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TenTaiSan, "Tên tài sản(*)", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.TenTaiSan, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TenTaiSan, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ThongSoKyThuat, "Thông số kỹ thuật", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.ThongSoKyThuat, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ThongSoKyThuat, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NamSX, "Năm sản xuất", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.NamSX, new { htmlAttributes = new { @class = "form-control", @id = "produce", @placeholder = "Chọn năm sản xuất.." } })
+                @Html.ValidationMessageFor(model => model.NamSX, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.XuatXu, "Nước sản xuất", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.XuatXu, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.XuatXu, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ThoiGianBaoHanh, "Thời gian bảo hành", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.ThoiGianBaoHanh, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ThoiGianBaoHanh, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DonViTinh, "Đơn vị tính", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.DonViTinh, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DonViTinh, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SerialNumber, "Số serial", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.SerialNumber, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SerialNumber, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Soluong, "Số lượng(*)", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.Soluong, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Soluong, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NguyenGia, "Nguyên giá(*)", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.NguyenGia, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NguyenGia, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DonViTinh, "Ngày mua(*)", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.NgayMua, new { htmlAttributes = new { @class = "form-control", @id = "buy", @placeholder = "Chọn ngày mua ở đây..." } })
+                @Html.ValidationMessageFor(model => model.NgayMua, string.Empty, new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.StatusId, "Tình trạng", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                @Html.DropDownListFor(model => model.StatusId, ViewBag.ListStatus as SelectList, "--Chọn tình trạng--", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.StatusId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.GhiChu, "Ghi chú", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.GhiChu, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.GhiChu, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaDuAn, "Dự án", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                @Html.DropDownListFor(model => model.MaDuAn, ViewBag.ListDuAn as SelectList, "--Chọn dự án--", htmlAttributes: new { @class = "form-control" })
+
+                @Html.ValidationMessageFor(model => model.MaDuAn, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaDonVi, "Đơn vị sử dụng(*)", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                @Html.DropDownListFor(model => model.MaDonVi, ViewBag.MaDonVi as SelectList, "--Chọn đơn vị--", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MaDonVi, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DonViTinh, "Ngày bàn giao(*)", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.NgayBanGiao, new { htmlAttributes = new { @class = "form-control", @id = "handover", @placeholder = "Chọn ngày bàn giao ở đây..." } })
+                @Html.ValidationMessageFor(model => model.NgayBanGiao, string.Empty, new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-6 col-md-8">
+                <input type="submit" value="Thêm mới" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+                     
+            var groupid = $('#MaTaiSan').val();
+            var maloai = $('#MaTaiSan').val();
+
+            @if(Model!=null && Model.MaLoai !=null)
+            {
+                @:GetTypeAsset('@Model.tblLoaiTaiSan.GroupAssetId', '@Model.MaLoai')
+                            @:onDropdownChange('@Model.MaLoai')
+                        }
+
+
+            $("#handover").datepicker({ format: 'dd/mm/yyyy', autoclose: true, todayBtn: 'linked' })
+            // $("#produce").datepicker({ format: 'dd/mm/yyyy', autoclose: true, todayBtn: 'linked' })
+            $("#buy").datepicker({ format: 'dd/mm/yyyy', autoclose: true, todayBtn: 'linked' })
+        });
+
+
+        function onDropdownChange(code) {
+
+            $.ajax({
+                url: '@Url.Action("GenerateMaTs", "tblTaiSans")',
+                type: "Get",
+                data: { "assetTypeCode": code },
+                "success": function (data) {
+                    if (data != null) {
+                        var vdata = JSON.stringify(data).replace(/null/g, '""'); //convert to JSON string
+                        //var assetTypeCode = JSON.parse(vdata).slice(1, -1);
+                        var assetTypeCode = JSON.parse(vdata);
+                        console.log(vdata);
+                        $('#MaTaiSan').val(assetTypeCode);
+                    }
+                }
+            });
+        }
+
+        function GetTypeAsset(_parentId, maloai) {
+
+            var procemessage = "<option value='0'> Please wait...</option>";
+            $("#MaLoai").html(procemessage).show();
+            var url = "/tblTaiSans/GetTypeAssetByParentId/";
+
+            $.ajax({
+                url: url,
+                data: { parentId: _parentId },
+                cache: false,
+                type: "POST",
+                success: function (data) {
+                    $('#MaTaiSan').val('');
+                    var markup = "<option value='0'>--Chọn loại tài sản--</option>";
+                    for (var x = 0; x < data.length; x++) {
+                        if (data[x].Value == maloai) {
+                            markup += "<option value=" + data[x].Value + " selected>" + data[x].Text + "</option>";
+                        }
+                        else {
+                            markup += "<option value=" + data[x].Value + ">" + data[x].Text + "</option>";
+                        }
+
+                    }
+                    $("#MaLoai").html(markup).show();
+                },
+                error: function (reponse) {
+                    alert("error : " + reponse);
+                }
+            });
+
+        }
+        
+    </script>
+}
+
+<div>
+    @Html.ActionLink("Quay về danh sách", "Index")
+</div>
+
+

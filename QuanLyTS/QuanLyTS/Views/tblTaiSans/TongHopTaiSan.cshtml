@@ -1,0 +1,150 @@
+﻿
+@model QuanLyTS.Models.tblTaiSan
+
+@{
+    ViewBag.Title = "TongHopTaiSan";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style type="text/css">
+    .webgrid-table {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        width: 100%;
+        display: table;
+        border-collapse: separate;
+        border: solid 1px #98BF21;
+        background-color: white;
+    }
+
+        .webgrid-table td, th {
+            border: 1px solid #98BF21;
+            padding: 3px 7px 2px;
+        }
+
+    .webgrid-header {
+        background-color: #A7C942;
+        color: #FFFFFF;
+        padding-bottom: 4px;
+        padding-top: 5px;
+        text-align: left;
+    }
+
+    .webgrid-footer {
+    }
+
+    .webgrid-row-style {
+        padding: 3px 7px 2px;
+    }
+
+    .webgrid-alternating-row {
+        background-color: #EAF2D3;
+        padding: 3px 7px 2px;
+    }
+</style>
+
+
+
+
+
+
+
+<h2>Thống kê loại tài sản</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <input type="hidden" name="id" id="hdMaLoai" />
+        <div class="form-group">
+            @Html.LabelFor(model => model.tblLoaiTaiSan.GroupAssetId, "Nhóm Tài Sản(*)", htmlAttributes: new { @class = "control-label col-md-3" })                      
+            <div class="col-md-8">
+                @*@Html.DropDownListFor(model => model.tblLoaiTaiSan.GroupAssetId, ViewBag.NhomTS as SelectList, "--Chọn Nhóm Tài Sản--", htmlAttributes: new { @class = "form-control", @onchange = "GetTypeAsset(this.value,'');" })*@
+                @Html.DropDownList("listGroupAsset", Model.ListGroupAssets, "--Chọn Nhóm Tài Sản--", htmlAttributes: new { @class = "form-control", @onchange = "GetTypeAsset(this.value,'');" })
+                @Html.ValidationMessageFor(model => model.tblLoaiTaiSan.GroupAssetId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaLoai, "Loại Tài Sản(*)", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                <select id="MaLoai" name="MaLoai" class="form-control"  onchange="onDropdownChange(this.value);"></select>               
+                 @Html.ValidationMessageFor(model => model.MaLoai, "", new { @class = "text-danger" })
+            </div>
+        </div>
+                                       
+
+        <div class="form-group">
+            <div class="col-md-offset-6 col-md-8">
+                <input type="submit" value="Thống kê" class="btn btn-default" />
+                <input type="submit" value="Xuất Excel" class="btn btn-info"  formaction="/tbltaisans/ExportDataByTypeAsset" />
+               
+            </div>           
+
+        </div>
+    </div>
+
+    <div id="EmployeeViewGrid">
+    @if (Model.ListAssets_Grid != null)
+     {
+    @Html.Partial("_ListAssetsByType", Model.ListAssets_Grid)
+    }     
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            var maloai = $('#MaLoai').val();
+           // alert(maloai);
+
+            @if(Model!=null&& Model.MaLoai !=null)
+            {
+               @:GetTypeAsset('@Model.GroupAssetId', '@Model.MaLoai')
+               @:onDropdownChange('@Model.MaLoai')
+            }
+        });
+
+        function onDropdownChange(code) {
+            //alert(code);
+            $('#hdMaLoai').val(code);
+        }
+
+        function GetTypeAsset(_parentId, maloai) {
+
+            var procemessage = "<option value='0'> Please wait...</option>";
+            $("#MaLoai").html(procemessage).show();
+            var url = "/tblTaiSans/GetTypeAssetByParentId/";
+
+            $.ajax({
+                url: url,
+                data: { parentId: _parentId },
+                cache: false,
+                type: "POST",
+                success: function (data) {
+                    $('#MaTaiSan').val('');
+                    var markup = "<option value='0'>--Chọn loại tài sản--</option>";
+                    for (var x = 0; x < data.length; x++) {
+                        if (data[x].Value == maloai) {
+                            markup += "<option value=" + data[x].Value + " selected>" + data[x].Text + "</option>";
+                        }
+                        else {
+                            markup += "<option value=" + data[x].Value + ">" + data[x].Text + "</option>";
+                        }
+
+                    }
+                    $("#MaLoai").html(markup).show();
+                },
+                error: function (reponse) {
+                    alert("error : " + reponse);
+                }
+            });
+
+        }
+
+    </script>
+}
+    
+

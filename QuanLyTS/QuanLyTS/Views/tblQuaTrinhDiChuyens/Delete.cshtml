@@ -1,0 +1,56 @@
+﻿@model QuanLyTS.Models.tblQuaTrinhDiChuyen
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Xóa phiếu điều chuyển tài sản</h2>
+
+<h3>Bạn chắc chắn muốn xóa nó?</h3>
+<div>    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Ngày chuyển
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayChuyen)
+        </dd>
+
+        <dt>
+            Ghi chú
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GhiChu)
+        </dd>
+
+        <dt>
+            Tên lần chuyển
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenLanChuyen)
+        </dd>
+
+        <dt>
+            Họ tên giáo viên
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblCanBoGiaoVien.HoTen)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Quay về danh sách", "Index")
+        </div>
+    }
+</div>

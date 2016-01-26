@@ -1,0 +1,90 @@
+﻿@model QuanLyTS.Models.tblChiTietGiaoNhan
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Chi tiết Giao nhận tài sản</h2>
+
+<div>   
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tỷ lệ khẩu hao
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TyLeKhauHao)
+        </dd>
+
+        <dt>
+            Số lượng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuong)
+        </dd>
+
+        <dt>
+            Đơn giá
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DonGia)
+        </dd>
+
+        <dt>
+            Đơn giá khấu hao
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DonGiaKhauHao)
+        </dd>
+
+        <dt>
+            Ngày tháng SD
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayThangSD)
+        </dd>
+
+        <dt>
+            Tên kho
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblKhoLuuTru.TenKho)
+        </dd>
+
+        <dt>
+            Mã đơn vị
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblPhieuBanGiao.MaDonVi)
+        </dd>
+
+        <dt>
+            Mã loại
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblTaiSan.MaLoai)
+        </dd>
+
+        <dt>
+            Mô tả
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblTinhTrang.MoTa)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.MaPhieuGiao,id1=Model.MaTaiSan }) |
+    @Html.ActionLink("Quay về danh sách", "Index")
+</p>

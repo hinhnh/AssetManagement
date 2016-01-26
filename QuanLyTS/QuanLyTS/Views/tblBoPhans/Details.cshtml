@@ -1,0 +1,43 @@
+﻿@model QuanLyTS.Models.tblBoPhan
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tblBoPhan</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenBoPhan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenBoPhan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DienThoai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DienThoai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblDonVi.TenDonVi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblDonVi.TenDonVi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaBoPhan }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

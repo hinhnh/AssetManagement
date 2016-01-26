@@ -1,0 +1,114 @@
+﻿
+@model PagedList.IPagedList<QuanLyTS.Models.tblTaiSan>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var grid = new WebGrid(source: Model, rowsPerPage: 8);
+}
+
+<h2> Tài sản</h2>
+
+<p>
+    @Html.ActionLink("Thêm mới", "Create")
+</p>
+
+@using (Html.BeginForm())
+{
+    <div class="row" style="padding-bottom:10px;">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">Tìm kiếm </button>
+                </span>
+                <input type="text" name="SearchString" class="form-control" placeholder="Tìm theo tên tài sản hoặc mã tài sản ">
+            </div>
+            <!-- /input-group -->
+        </div>
+    </div>
+
+
+    @grid.GetHtml(
+    columns:
+       grid.Columns(
+    grid.Column("MaTaiSan", "Mã tài sản"),
+    grid.Column("TenTaiSan", "Tên tài sản"),
+    grid.Columns(grid.Column("NamSX", "Tên loại")
+    )
+    )
+}
+    <table class="table table-bordered">
+        <tr>
+            <th>
+                Mã tài sản
+            </th>
+            <th>
+                Tên tài sản
+            </th>
+            <th>
+                Thông số kỹ thuật
+            </th>
+            <th>
+                Năm SD
+            </th>
+            <th>
+                Xuất sứ
+            </th>
+            <th>
+                Thời gian BH
+            </th>
+            <th>
+                Đơn vị tính
+            </th>
+            <th>
+                Ghi chú
+            </th>
+            <th>
+                Tên loại
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaTaiSan)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenTaiSan)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ThongSoKyThuat)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NamSX)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.XuatXu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ThoiGianBaoHanh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DonViTinh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GhiChu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tblLoaiTaiSan.TenLoai)
+                </td>
+                <td>
+                    @Html.ActionLink("Sửa", "Edit", new { id = item.MaTaiSan })|@Html.ActionLink("Xóa", "Delete", new { id = item.MaTaiSan })
+                </td>
+            </tr>
+        }
+
+    </table>
+    <br />
+    Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+

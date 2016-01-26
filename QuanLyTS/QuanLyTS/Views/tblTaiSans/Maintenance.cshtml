@@ -1,0 +1,226 @@
+﻿
+@model QuanLyTS.Models.tblTaiSan
+
+    @{
+        ViewBag.Title = "Maintenance";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+    <h2>Bảo dưỡng/Sửa chữa</h2>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.tblLoaiTaiSan.GroupAssetId, "Danh mục tài sản", htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-8">
+                    @*@Html.DropDownListFor(model => model.tblLoaiTaiSan.GroupAssetId, ViewBag.NhomTS as SelectList, "--Chọn Nhóm Tài Sản--", htmlAttributes: new { @class = "form-control", @onchange = "GetTypeAsset(this.value,'');" })*@
+                    @Html.DropDownList("listGroupAsset", Model.ListGroupAssets, "--Chọn Nhóm Tài Sản--", htmlAttributes: new { @class = "form-control", @onchange = "GetTypeAsset(this.value,'');" })
+                    @Html.ValidationMessageFor(model => model.tblLoaiTaiSan.GroupAssetId, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.MaLoai, "Loại tài sản", htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-8">
+                    <select id="MaLoai" name="MaLoai" class="form-control" onchange="onDropdownChange(this.value);"></select>
+                    @Html.ValidationMessageFor(model => model.MaLoai, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.TenTaiSan, "Tên tài sản", htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.TenTaiSan, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TenTaiSan, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.MaTaiSan, "Mã tài sản", htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.MaTaiSan, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.MaTaiSan, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.MaDonVi, "Đơn vị sử dụng", htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-8">
+                    @Html.DropDownListFor(model => model.MaDonVi, ViewBag.MaDonVi as SelectList, "--Chọn đơn vị--", htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.MaDonVi, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.DonViTinh, "Ngày mua", htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.NgayMua, new { htmlAttributes = new { @class = "form-control", @id = "buy", @placeholder = "Chọn ngày mua ở đây..." } })
+                    @Html.ValidationMessageFor(model => model.NgayMua, string.Empty, new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.DonViTinh, "Ngày bàn giao", htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.NgayBanGiao, new { htmlAttributes = new { @class = "form-control", @id = "handover", @placeholder = "Chọn ngày bàn giao ở đây..." } })
+                    @Html.ValidationMessageFor(model => model.NgayBanGiao, string.Empty, new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.NguyenGia, "Nguyên giá", htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.NguyenGia, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.NguyenGia, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.ThoiGianBaoHanh, "Thời gian bảo hành", htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.ThoiGianBaoHanh, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ThoiGianBaoHanh, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-6 col-md-8">
+                    <input type="submit" value="Lưu" class="btn btn-success" />
+                    <input type="submit" value="In phiếu" class="btn btn-primary" />
+                </div>
+            </div>
+
+        </div>
+        <h2>Danh sách tài sản</h2>
+        <div class="row">
+            <div class="col-xs-12">
+              <div class="table-responsive">
+                <table summary="This table shows how to create responsive tables using Bootstrap's default functionality" class="table table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th>Danh mục tài sản</th>
+                      <th>Loại tài sản</th>
+                      <th>Tên tài sản</th>
+                      <th>Đơn vị sử dụng</th>
+                      <th>Ngày mua</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Argentina</td>
+                      <td>Spanish (official), English, Italian, German, French</td>
+                      <td>41,803,125</td>
+                      <td>31.3</td>
+                      <td>2,780,387</td>
+                    </tr>
+                    <tr>
+                      <td>Australia</td>
+                      <td>English 79%, native and other languages</td>
+                      <td>23,630,169</td>
+                      <td>37.3</td>
+                      <td>7,739,983</td>
+                    </tr>
+                    <tr>
+                      <td>Greece</td>
+                      <td>Greek 99% (official), English, French</td>
+                      <td>11,128,404</td>
+                      <td>43.2</td>
+                      <td>131,956</td>
+                    </tr>
+                    <tr>
+                      <td>Luxembourg</td>
+                      <td>Luxermbourgish (national) French, German (both administrative)</td>
+                      <td>536,761</td>
+                      <td>39.1</td>
+                      <td>2,586</td>
+                    </tr>     
+                  </tbody>
+                </table>
+              </div><!--end of .table-responsive-->
+            </div>
+          </div>
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+
+                var groupid = $('#MaTaiSan').val();
+                var maloai = $('#MaTaiSan').val();
+                var d = new Date(1980, 2, 2);
+                @if (Model!=null && Model.MaLoai !=null)
+            {
+                @:GetTypeAsset('@Model.tblLoaiTaiSan.GroupAssetId', '@Model.MaLoai')
+                                            @:onDropdownChange('@Model.MaLoai')
+                                        }
+
+
+                $("#handover").datepicker({
+                    format: 'dd/mm/yyyy',
+                    autoclose: true,
+                    todayBtn: 'linked',
+                    changeMonth: true,
+                    changeYear: true,
+                    defaultDate: d,
+                    monthNamesShort: ['Jan', 'Feb', 'Mar', 'Apr', 'Maj', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dec'],
+                    dayNamesMin: ['Ned', 'Pon', 'Uto', 'Sri', '&#268;et', 'Pet', 'Sub']
+                })
+                // $("#produce").datepicker({ format: 'dd/mm/yyyy', autoclose: true, todayBtn: 'linked' })
+                $("#buy").datepicker({
+                    format: 'dd/mm/yyyy',
+                    autoclose: true,
+                    todayBtn: 'linked',
+                    changeMonth: true,
+                    changeYear: true,
+                    defaultDate: d,
+                    monthNamesShort: ['Jan', 'Feb', 'Mar', 'Apr', 'Maj', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dec'],
+                    dayNamesMin: ['Ned', 'Pon', 'Uto', 'Sri', '&#268;et', 'Pet', 'Sub']
+                })
+            });
+
+
+            function onDropdownChange(code) {
+
+                $.ajax({
+                    url: '@Url.Action("GenerateMaTs", "tblTaiSans")',
+                    type: "Get",
+                    data: { "assetTypeCode": code },
+                    "success": function (data) {
+                        if (data != null) {
+                            var vdata = JSON.stringify(data).replace(/null/g, '""'); //convert to JSON string
+                            //var assetTypeCode = JSON.parse(vdata).slice(1, -1);
+                            var assetTypeCode = JSON.parse(vdata);
+                            console.log(vdata);
+                            $('#MaTaiSan').val(assetTypeCode);
+                        }
+                    }
+                });
+            }
+
+            function GetTypeAsset(_parentId, maloai) {
+
+                var procemessage = "<option value='0'> Please wait...</option>";
+                $("#MaLoai").html(procemessage).show();
+                var url = "/tblTaiSans/GetTypeAssetByParentId/";
+
+                $.ajax({
+                    url: url,
+                    data: { parentId: _parentId },
+                    cache: false,
+                    type: "POST",
+                    success: function (data) {
+                        $('#MaTaiSan').val('');
+                        var markup = "<option value='0'>--Chọn loại tài sản--</option>";
+                        for (var x = 0; x < data.length; x++) {
+                            if (data[x].Value == maloai) {
+                                markup += "<option value=" + data[x].Value + " selected>" + data[x].Text + "</option>";
+                            }
+                            else {
+                                markup += "<option value=" + data[x].Value + ">" + data[x].Text + "</option>";
+                            }
+
+                        }
+                        $("#MaLoai").html(markup).show();
+                    },
+                    error: function (reponse) {
+                        alert("error : " + reponse);
+                    }
+                });
+
+            }
+
+        </script>
+    }

@@ -1,0 +1,50 @@
+﻿
+@model IEnumerable<QuanLyTS.Models.tblTaiSan>
+
+<div id="gridposition" style="overflow: scroll; height: 300px; overflow-x: hidden;">
+    @{
+        var grid1 = new WebGrid(source: Model, canPage: true, rowsPerPage: 5, ajaxUpdateContainerId: "gridContent");
+
+        @grid1.GetHtml(mode: WebGridPagerModes.All, tableStyle: "webGrid",
+                headerStyle: "header",
+                alternatingRowStyle: "alt",
+                selectedRowStyle: "select",
+                rowStyle: "description",
+                htmlAttributes: new { id = "positionGrid" },
+                fillEmptyRows: false,
+
+                columns: grid1.Columns(
+
+                 grid1.Column("TenTaiSan", header: "TenTaiSan"),
+                 grid1.Column("MaDonVi", header: "TenDonVi"),
+                 grid1.Column("XuatXu", header: "Xuat Xu"),
+                 grid1.Column("DonViTinh", header: "DonViTinh"),
+                 grid1.Column("GhiChu", header: "GhiChu")))
+    }
+</div>
+
+
+<div id="gridContent" style="padding:20px; ">
+@{
+
+    var grid = new WebGrid(source: Model, canPage: true, rowsPerPage: 5, ajaxUpdateContainerId: "gridContent");
+    @grid.GetHtml(
+        tableStyle: "webgrid-table",
+        headerStyle: "webgrid-header",
+        footerStyle: "webgrid-footer",
+        alternatingRowStyle: "webgrid-alternating-row",
+        selectedRowStyle: "webgrid-selected-row",
+        rowStyle: "webgrid-row-style",
+        mode: WebGridPagerModes.All,
+        columns: grid.Columns(
+
+                 grid.Column("TenTaiSan", header: "TenTaiSan"),
+                 grid.Column("MaDonVi", header: "TenDonVi"),
+                 grid.Column("XuatXu", header: "Xuat Xu"),
+                 grid.Column("DonViTinh", header: "DonViTinh"),
+                 grid.Column("GhiChu", header: "GhiChu")))
+
+}    
+    
+   
+</div>

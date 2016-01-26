@@ -1,0 +1,42 @@
+﻿@model QuanLyTS.Models.tblNoiSuDung
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Chi tiết nơi SD</h2>
+
+<div>    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tên nơi SD
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenNoiSD)
+        </dd>
+
+        <dt>
+            Ghi chú
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GhiChu)
+        </dd>
+
+        <dt>
+            Mã đơn vị
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblBoPhan.MaDonVi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.MaNoiSD }) |
+    @Html.ActionLink("Quay về danh sách", "Index")
+</p>

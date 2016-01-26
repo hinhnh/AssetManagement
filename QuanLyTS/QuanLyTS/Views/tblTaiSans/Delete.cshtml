@@ -1,0 +1,88 @@
+﻿@model QuanLyTS.Models.tblTaiSan
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Xóa tài sản</h2>
+
+<h3>Bạn thực sự muốn xóa tài sản này ? </h3>
+<div>    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tên tài sản
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenTaiSan)
+        </dd>
+
+        <dt>
+            Thông số kỹ thuật
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThongSoKyThuat)
+        </dd>
+
+        <dt>
+            Năm SD
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NamSX)
+        </dd>
+
+        <dt>
+            Xuất sứ
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.XuatXu)
+        </dd>
+
+        <dt>
+            Thời gian bảo hành
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThoiGianBaoHanh)
+        </dd>
+
+        <dt>
+            Đơn vị tính
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DonViTinh)
+        </dd>
+
+        <dt>
+            Ghi chú
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GhiChu)
+        </dd>
+
+        <dt>
+            Tên loại
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblLoaiTaiSan.TenLoai)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Quay về danh sách", "Index")
+        </div>
+    }
+</div>

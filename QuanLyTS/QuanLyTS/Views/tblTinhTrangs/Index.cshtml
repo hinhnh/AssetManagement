@@ -1,0 +1,40 @@
+﻿@model IEnumerable<QuanLyTS.Models.tblTinhTrang>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Tình trạng tài sản</h2>
+
+<p>
+    @Html.ActionLink("Thêm mới", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Mô tả
+        </th>
+        <th>
+            Ghi chú
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MoTa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GhiChu)
+        </td>
+        <td>
+            @Html.ActionLink("Sửa", "Edit", new { id=item.TinhTrang }) |
+            @Html.ActionLink("Chi tiết", "Details", new { id=item.TinhTrang }) |
+            @Html.ActionLink("Xóa", "Delete", new { id=item.TinhTrang })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,145 @@
+﻿@using Microsoft.AspNet.Identity;
+
+@{
+    string userId = User.Identity.GetUserId<string>();
+}
+
+@if (User.IsInRole("Xưởng trưởng"))
+{
+    <div id="menungang" class="menungang">
+        <div>
+            <ul id="topnav">
+
+                <li>
+                    <a href=""><span><b>Hệ Thống</b></span> </a>
+                    <ul>
+                        <li><a href="/tblLoaiTaiSans"><span>Đăng nhập</span></a></li>
+                        <li><a href="/tblTinhTrangs"><span>Thay đổi mật khẩu</span></a></li>
+                        <li><a href="/tblKhoLuuTrus"><span>Thoát</span></a></li>
+                        <li><a href="/tblNoiSuDungs"><span>Danh mục đơn vị sử dụng</span></a></li>
+                        <li><a href="/tblPhieuBanGiaos"><span>Danh mục biên bản bàn giao</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=""><b>Nghiệp vụ</b></a>
+                    <ul>
+                        <li><a href="/tblTaiSans"><span>Nhập mới tài sản</span></a></li>
+                        <li><a href="/tblTaiSans/Maintenance"><span>Bảo dưỡng/Sửa chữa</span></a></li>
+                        <li><a href="/tblQuaTrinhDiChuyens"><span>Điều chuyển tài sản</span></a></li>
+                        <li><a href="#"><span>Kế hoạch mua sắm</span></a></li>
+                        <li><a href="#"><span>Đề nghị trang bị tài sản</span></a></li>
+                        <li><a href="#"><span>Thiết lập thông số</span></a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href=""><b>Thống kê-Tìm kiếm</b></a>
+                    <ul>
+                        <li><a href="/tblTaiSans/TongHopTaiSan"><span>Thống kê loại tài sản</span></a></li>
+                        <li><a href="/tblTaiSans/TaiSanTheoNoiSD"><span>Thống kê theo đơn vị</span></a></li>
+                        <li><a href="/tblTaiSans/ThanhLyTS"><span>Tìm kiếm tài sản</span></a></li>
+                        <li><a href="/tblTaiSans/ThanhLyTS"><span>Kiểm kê tài sản</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=""><b>Khấu hao</b></a>
+                    <ul>
+                        <li><a href="/tblChiTietPhieuMuons"><span>Xem khấu hao tài sản</span></a></li>
+                        <li><a href="/tblChiTietPhieuTras"><span>Báo cáo tài chính</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=""><b>Trợ giúp</b></a>
+                    <ul>
+                        <li><a href="/UsersAdmin/Details/@userId"><span>Biểu mẫu</span></a></li>
+                        <li><a href="/Manage/ChangePassword"><span>Chia sẻ</span></a></li>
+                        <li><a href="/Manage/ChangePassword"><span>Đề xuất từ đơn vị</span></a></li>
+                        <li><a href="/Manage/ChangePassword"><span>Hướng dẫn sử dụng</span></a></li>
+                    </ul>
+                </li>
+               
+            </ul>
+
+        </div>
+    </div>
+}
+else
+{
+    if (User.IsInRole("Admin"))
+    {
+        <div id="menungang" class="menungang">
+            <div>
+                <ul id="topnav">
+
+                    <li>
+                        <a href="/"><span><b>Trang chủ </b></span> </a>
+                    </li>
+                    <li>
+                        <a href=""><b>Giới thiệu </b></a>
+                    </li>
+                    <li>
+                        <a href=""><b>Chức năng Quản lý</b></a>
+                        <ul>
+                            <li><a href="/UsersAdmin"><span>Quản lý thành viên</span></a></li>
+                            <li><a href="/UsersAdmin/Create"><span>Tạo tài khoản</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><b>Liên hệ</b></a>
+                        <ul>
+                            <li><a href="/UsersAdmin/Details/@userId"><span>Thông tin cá nhân</span></a></li>
+                            <li><a href="/manage/changepassword"><span>Đổi mật khẩu</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><b>Trợ giúp </b></a>
+                    </li>
+                    <li><a href="/Account/Login"><b>Thoát </b></a></li>
+                </ul>
+
+            </div>
+        </div>
+    }
+    else
+    {
+        <div id="menungang" class="menungang">
+            <div>
+                <ul id="topnav">
+                    <li><a href="/">Trang chủ</a></li>
+                    <li>
+                        <a href=""><span><b>Chức năng </b></span> </a>
+                        <ul>
+                            <li><a href="/tblChiTietPhieuMuons/MuonTaiSan"><span>Mượn tài sản</span></a></li>
+                            <li><a href="/tblChiTietPhieuTras/TraTaiSan"><span>Trả tài sản</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><b>Thông tin tài sản </b></a>
+                        <ul>
+                            <li><a href="/tblTaiSans"><span>Tài sản trong kho</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><b>Liên hệ</b></a>
+                        <ul>
+                            <li><a href="/UsersAdmin/Details/@userId"><span>Thông tin cá nhân</span></a></li>
+                            <li><a href="/manage/changepassword"><span>Đổi mật khẩu</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><b>Ý kiến</b></a>
+                        <ul>
+                            <li><a href="#"><span>Góp ý</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><b>Trợ giúp</b></a>
+                    </li>
+                    <li><a href="/Account/Login"><b>Thoát </b></a></li>
+                </ul>
+
+            </div>
+        </div>
+    }
+
+}

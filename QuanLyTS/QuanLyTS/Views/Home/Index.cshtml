@@ -1,0 +1,14 @@
+﻿@using Microsoft.AspNet.Identity;
+@using System.Web.Security
+
+@{
+    ViewBag.Title = "Trang chủ";
+    string userId = User.Identity.GetUserId<string>();
+
+
+    //string[] current_user_role = Roles.GetRolesForUser();
+}
+
+    <div class="container">
+        @*<h1>Bạn đang đăng nhập với Quyền @current_user_role.</h1>*@
+    </div>

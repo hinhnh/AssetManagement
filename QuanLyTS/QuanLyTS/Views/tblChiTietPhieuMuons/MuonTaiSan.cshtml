@@ -1,0 +1,100 @@
+﻿@model IEnumerable<QuanLyTS.Models.tblChiTietPhieuMuon>
+
+@{
+    ViewBag.Title = "Mượn Tài sản";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Mượn tài sản</h2>
+<p>
+    @Html.ActionLink("Mượn mới", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Mã phiếu
+        </th>
+        <th>
+            Mã tài sản
+        </th>
+        <th>
+            Tên tài sản
+        </th>
+        <th>
+            Nhóm tài sản
+        </th>
+        <th>
+            Tình trạng
+        </th>
+        <th>
+            Số lượng
+        </th>
+        <th>
+            Kho lưu trữ
+        </th>
+        <th>
+            Nơi sử dụng
+        </th>
+        <th>
+            Mã người giao
+        </th>
+        <th>
+            Mã người nhận
+        </th>
+        <th>
+            Ngày mượn
+        </th>
+        <th>
+            Đơn vị tính
+        </th>
+        <th>
+            Thời gian bảo hành
+        </th>        
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaPhieu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaTaiSan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tblTaiSan.TenTaiSan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tblTaiSan.tblLoaiTaiSan.TenLoai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tblTinhTrang.MoTa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoLuong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tblKhoLuuTru.TenKho)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tblNoiSuDung.TenNoiSD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaNguoiGiao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaNguoiMuon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayMuon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tblTaiSan.DonViTinh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tblTaiSan.ThoiGianBaoHanh)
+            </td>           
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,84 @@
+﻿@model IEnumerable<QuanLyTS.Models.tblKhoTaiSan>
+
+@{    
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Thông tin tài sản trong kho</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Mã kho
+        </th>
+        <th>
+            Mã tài sản
+        </th>
+        <th>
+            Tên tài sản
+        </th>
+        <th>
+            Nhóm tài sản
+        </th>
+        <th>
+            Số lượng
+        </th>
+        <th>
+            Kho lưu trữ
+        </th>
+        <th>
+            Đơn vị tính
+        </th>
+        <th>
+            Thông số kỹ thuật
+        </th>
+        <th>
+            Thời gian bảo hành
+        </th>
+        <th>
+            Mã bộ phận 
+        </th>
+        <th>
+            Ghi chú
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaKho)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaTaiSan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblTaiSan.TenTaiSan)
+        </td>        
+        <td>
+            @Html.DisplayFor(modelItem => item.tblTaiSan.tblLoaiTaiSan.TenLoai)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoLuong)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblKhoLuuTru.TenKho)
+        </td>    
+        <td>
+            @Html.DisplayFor(modelItem => item.tblTaiSan.DonViTinh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblTaiSan.ThongSoKyThuat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblTaiSan.ThoiGianBaoHanh)
+        </td>    
+        <td>
+            @Html.DisplayFor(modelItem => item.tblKhoLuuTru.tblBoPhan.TenBoPhan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblKhoLuuTru.GhiChu)
+        </td>        
+    </tr>
+}
+
+</table>

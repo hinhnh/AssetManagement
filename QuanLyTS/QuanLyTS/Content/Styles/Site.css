@@ -1,0 +1,738 @@
+﻿body
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #F9F9F9;
+	margin:auto !important;
+}
+
+.Trangchu
+{
+	height: auto;
+	width: 100%;
+	margin:auto;
+	background-color: #F2F2F2;
+}
+.PhanDau
+{
+	height: 198px;
+	background-color: #DBDBDB;
+	clear: both;
+}
+.PhanThan
+{
+	height:auto;
+
+}
+.PhanDuoi
+{
+	height: auto;
+    padding-bottom:10px;
+    color:white;
+	background-color: 	#013A57;
+}
+
+.ToanKhoi
+{
+    margin-bottom:10px;
+	clear: both;	
+    box-shadow: 0px 4px 5px #000000;
+}
+/*----Ket Thuc Phan Chia Trang -------*/
+
+/*---- Thiet Ke Than web ------*/
+.ThanBenTrai
+{
+	float: left;
+	height: auto;
+	width: 20%;
+	margin-top: 10px;
+	margin-left: 0px;
+}
+.ThanBenTrai1
+{
+	float: left;
+	height: auto;
+	width: 20%;
+	margin-top: -10px;
+	margin-left: 0px;
+}
+.main-content{
+    width:100%;
+    position:relative;
+}
+.content{
+    width:100%;
+    float:left;    
+    padding:10px;
+}
+.footer{
+    clear:both;
+    width:100%;
+    position:relative;
+}
+.ThanBenTrai2
+{
+	float: left;
+	height: auto;
+	width: 20%;
+	margin-top: -10px;
+	margin-left: 0px;
+}
+.ThanGiua
+{
+	float: left;
+	height:auto;
+	/*auto khi lam thi de che do nay*/
+	width: 590px;
+	/*59%*/
+	margin-top: 10px;
+	color: #000000;
+	border: 1px solid #CCCCCC;
+}
+
+.ThanGiua1
+{
+	float: left;
+	height:auto;
+	/*auto khi lam thi de che do nay*/
+	width: 797px;
+	/*59%*/
+	margin-top: -10.7px;
+	color: #000000;
+	border: 1px solid #CCCCCC;
+}
+.ThanGiua2
+{
+	float: left;
+	height:auto;
+	/*auto khi lam thi de che do nay*/
+	width: 797px;
+	/*59%*/
+	margin-top: -22.5px;
+	color: #000000;
+	border: 1px solid #CCCCCC;
+}
+/*--- Thiet Ke ben Trai  ----*/
+/*--- Tao Menu ----*/
+.MeNuThang
+{
+	width: 100%;
+	height: 298px;
+
+}
+.MeNuThang1
+{
+	width: 100%;
+	height: 244px;
+
+}
+.MeNuThang2
+{
+	width: 100%;
+	height: 135px;
+
+}
+.MeNuThang3
+{
+	width: 100%;
+	height: auto;
+
+}
+.MeNuTieuDe
+{
+	background-color:#013A57;
+	
+	width: 99%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+color: #FFFFFF;
+	
+	text-align: center;
+	padding-top: 5px;
+	font-style: normal;
+	font-weight: bolder;
+	padding-left: 1px;
+	padding-right: 0px;
+	-moz-border-radius:5px 5px 0px 0px;
+}
+.MeNuDanhSach
+{
+	height: auto;
+	width: 100%;
+	margin-bottom: 10px;
+
+}
+.MeNuDanhSach ul
+{
+	height: auto;
+	width: auto;
+	padding: 1px;
+	text-decoration: none;
+	margin: 0px;
+	
+}
+.MeNuDanhSach ul li
+{
+	font-family: "Courier New", Courier, monospace;
+	height: 25px;
+	width: auto;
+	font-size: 15px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-color: #DFDFDF;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #EAEAEA;
+	border-bottom-color: #AAAAAA;
+	list-style-type:none;
+	
+	
+}
+.table{
+   
+            background-color: #0C828C!important;
+            border-collapse: collapse!important;
+            color: #FFF!important;
+        }
+
+            .table th {
+                background-color: #0C828C!important;
+                color: #FFF!important;
+            }
+
+            .table td, .table th {
+                
+                color: #FFF!important;
+            }
+
+.MeNuDanhSach ul li a
+{
+	text-decoration:none;
+	color:black;
+	display:block;
+	padding-left:20px !important;
+	
+	height: auto;
+	width: auto;
+}
+.MeNuDanhSach ul li a:hover
+{
+	color:#013A57;
+	background-color:#FFFFFF;
+	height: 25px;
+	width: auto;
+	font-size:16px;
+	font-weight:bold;font-style:normal;
+	
+	background:transparent;
+	
+}
+
+/*---  KT Tao Menu ----*/
+/*---- Tim Kiem -------*/
+.TieuDeTimKiem
+{
+	background-color: #999999;
+	height: 25px;
+	width: 99%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 5px;
+	font-style: normal;
+	font-weight: bolder;
+	padding-left: 1px;
+	padding-right: 0px;
+	margin-bottom: 3px;
+	margin-top: 0px;
+	-moz-border-radius:5px 5px 0px 0px;
+}
+.TimKiem
+{
+	height: auto;
+	width: auto;
+	clear: both;
+	background-color: #FFFFFF;
+	margin-bottom: 5px;
+
+}
+.center
+{ 
+text-align:center;
+}
+.tk select{width:95%;margin:5px 0px; }
+.tk {
+width:100%;
+
+}
+/*---- TK Tim Kiem -------*/
+/*---- Dang Nhap ----*/
+.TieuDeDangNhap
+{
+	background-color: #999999;
+	height: 25px;
+	width: 99%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: center;
+	font-style: normal;
+	font-weight: bolder;
+	padding-left: 1px;
+	padding-right: 0px;
+	padding-top: 5px;
+	-moz-border-radius:5px 5px 0px 0px;
+}
+.DangNhap
+{
+	height: auto;
+	clear: both;
+	margin-bottom:5px;
+	width: 99%;
+	background-color: #FFFFFF;
+}
+.Tintuc
+{
+	height: auto;
+	clear: both;
+	margin-bottom:5px;
+	width: 99%;
+	background-color: #FFFFFF;
+}
+.Tieudetintuc
+{
+	background-color: #999999;
+	height: 25px;
+	width: 99%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 5px;
+	font-style: normal;
+	font-weight: bolder;
+	padding-left: 1px;
+	padding-right: 0px;
+	margin-bottom: 3px;
+	margin-top: 0px;
+	-moz-border-radius:5px 5px 0px 0px;
+}
+.Hotrotructuyen
+{
+	height: auto;
+	clear: both;
+	margin-bottom:5px;
+	width: 99%;
+	background-color: #FFFFFF;
+}
+.TieudeHTTT
+{
+	background-color: #999999;
+	height: 25px;
+	width: 99%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 5px;
+	font-style: normal;
+	font-weight: bolder;
+	padding-left: 1px;
+	padding-right: 0px;
+	margin-bottom: 3px;
+	margin-top: 0px;
+	-moz-border-radius:5px 5px 0px 0px;
+}
+/*---- KT Dang Nhap ----*/
+
+/*---- Thiet Ke Phan Than ---*/
+.KhungLonSanPham
+{
+	height:auto;
+	width: 100%;
+	border: 1px solid #CCCCCC;
+	margin-left: 3px;
+	float: left;
+	clear: both;
+	margin-bottom: 15px;
+}
+.GioiThieuSanPham
+{
+	height: 26px;
+	width: 100%;
+	background-color:#999999;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 4px;
+
+}
+
+.KhoiSanPham
+{
+	height: auto;
+	width: 45%;
+	border: 1px solid #CCCCCC;
+	margin-left: 17px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bolder;
+	color: #FF0000;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	float: left;
+}
+.DauSanPham
+{
+	height: 23px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #CCCCCC;
+	padding-top: 5px;
+	padding-left: 4px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #0066FF;
+
+}
+.ThanSanPham
+{
+	height: 145px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #CCCCCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+.OSanPham
+{
+	height: 112px;
+	width: 80%;
+	margin-left: 15px;
+	margin-top: 4px;
+}
+.Chitietsanpham
+{
+	height: 100px;
+	width: 10px;
+	border: 1px dashed #CCCCCC;
+	margin-left: 0px;
+	margin-top: 0px;
+
+}
+.GiaSanPham
+{
+	height: 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #CCCCCC;
+	padding-left: 8px;
+	padding-top: 4px;
+
+}
+.ChiTietSamPham
+{
+	height: 20px;
+	padding-bottom: 4px;
+
+}
+
+/*---- Kt Thiet Ke Phan Than ---*/
+/*--- Thiet Ke Phan Duoi web ----*/
+.MeNuDuoi
+{
+	height: 29px;
+	width: 100%;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #000000;
+}
+.PhanBanquyen
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;		
+	text-align: center;
+
+}
+/*--- Thiet Ke Phan Duoi web ----*/
+/*-----Khoi Quang Cao ------*/
+.QuangCao1
+{
+	height: 100px;
+	width: 100%;
+	background-color: #3300FF;
+	margin-left: 5px;
+	float: left;
+}
+/*-----KT  Khoi Quang Cao ------*/
+
+/*------ Menu chinh -----*/
+.MenuChinh
+{
+	height: 30px;
+	width: 100%;
+}
+* {padding:0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+
+#menu {
+	width:100%;
+	margin-right: auto;
+	margin-left: auto;
+	height: 27px;
+	background-color: #999999;
+}
+
+#nav, nav ul {
+	list-style:none;
+	position:relative;
+	line-height:28px;
+	top: 0px;
+	left: 0px;
+}
+
+#nav a:link, #nav a:active, #nav a:visited {
+	display:block;
+	padding:0px 25px;
+	color:#000000;
+	text-decoration:none;
+	list-style-type: none;
+	padding:0px 25px;
+	background-color: #BFBFBF;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-left-style: none;
+	border-right-color: #EEEEEE;
+	border-left-color: #E5E5E5;
+	border-left-width: 1px;
+}
+
+#nav a:hover {
+	list-style-type: none;
+	background-color: #FCFCFC;
+	color:#FF00FF;
+	font-size:16px;
+}
+
+#nav li {
+	float:left;
+	position:relative;
+	list-style-type: none;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #E1E1E1;
+	border-bottom-color: #6A6A6A;
+	
+}
+
+#nav ul {
+	position:absolute;
+	width:30em;
+	display:none;
+	list-style-type: none;
+	margin-top: 2px;
+}
+
+#nav ul li a {
+	width:12em;
+	float:right;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-left-width:1px;
+	border-right-style: solid;
+}
+
+#nav ul ul {top: auto;}
+
+#nav li ul ul{
+	left:12em;
+	margin:0px 0px 0px 10px;
+	text-decoration:none;
+}
+
+#nav li:hover ul ul,
+#nav li:hover ul ul ul,
+#nav li:hover ul ul ul ul {
+	display:none;
+}
+
+#nav li:hover ul,
+#nav li li:hover ul,
+#nav li li li:hover ul,
+#nav li li li li:hover ul
+{
+display:block;
+}
+/*------ KT Menu chinh -----*/
+
+/*--- Thiet ke Banner ----*/
+.Banner{
+	width:auto;
+	height:auto;
+	background-color:#F9F9F9;
+	clear: both;
+}
+/*--- KT Thiet ke Banner ----*/
+#menubottom
+{
+	width:1000px;
+	height:28px;
+	float:left;
+	border:1px solid #cccccc;
+	background-color: #999999;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+}
+#menubottom ul
+{
+	float:left;
+	padding:0px;
+	list-style:none;
+	height: 26px;
+	width: auto;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-left: auto;
+}
+#menubottom ul li
+{
+	border-right:1px solid #ffffff;
+	float:left;
+	height: 24px;
+	width: 102px;
+}
+#menubottom li a
+{
+	color:#000000;
+	padding:15px;
+	font-size:14px;
+	text-decoration:none;
+	height: 26px;
+}
+#menubottom li a:hover
+{
+	color:#FFFFFF;
+	width: auto;
+}
+.datmua
+{
+	height: 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #CCCCCC;
+	padding-left: 8px;
+	padding-top: 4px;
+	text-align:right;
+}
+.datmua a{
+	margin-left: 2px;
+	line-height:20px;
+}
+
+
+
+
+.Tieude {	
+	height:26px;
+	width: 100%;
+	background-color:#999999;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+	-moz-border-radius: 5px 5px 0px 0px; 
+	-webkit-border-radius: 5px 5px 0px 0px;	
+}
+.Noidung {
+	float: left;
+	width:100%;
+	text-align:center;
+	margin-bottom: 15px;
+	text-align:left;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	background-color: #FCFCFC;
+}
+.Noidung ul {
+	width:100%;
+	margin: 0px;
+	padding: 0px;	
+	float:left;	
+	list-style:none;
+}
+.Noidung ul li {
+	height:auto;
+	width:588px;
+	padding:0px;
+	float:left;
+	margin: 0px;
+	padding: 0px;
+	text-align:center;
+	background-color:#FFFFFF;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #999999;
+	border-bottom-color: #999999;
+}
+.Noidung ul li a {
+	margin:0px;
+	padding:0px;
+	display:block;
+	text-decoration:none;
+}
+
+.Hinhanh {
+	height:200px;
+	width:199px;
+	text-align:center;
+	margin: 0px;
+	padding: 0px;
+	float:left;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #999999;
+}
+.Thongtin {
+	height:auto;
+	width:385px;
+	text-align:left;
+	margin-top:0px;
+	margin-bottom:0px;
+	float:left;
+}
+.nen
+{
+	background-image:url(Image/images.jpg);
+	}
+.main-container{
+    width:80%;
+    float:left;
+    padding:10px;
+}
+table tr td a{
+    color:#FFFFFF;
+}

@@ -1,0 +1,51 @@
+﻿@model QuanLyTS.Models.tblPhieuBanGiao
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Chi tiết phiếu giao</h2>
+
+<div>    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tên phiếu giao
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenPhieuGiao)
+        </dd>
+        
+        <dt>
+            Tên đơn vị
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblDonVi.TenDonVi)
+        </dd>
+        
+
+        <dt>
+            Họ tên giáo viên
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblCanBoGiaoVien.HoTen)
+        </dd>
+
+        
+        <dt>
+            Ngày giao
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayGiao)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.MaPhieuGiao }) |
+    @Html.ActionLink("Quay về danh sách", "Index")
+</p>

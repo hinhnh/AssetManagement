@@ -1,0 +1,501 @@
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\roslyn\csc.exe
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\roslyn\System.Collections.Immutable.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\roslyn\System.Reflection.Metadata.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\roslyn\vbc.exe
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\roslyn\VBCSCompiler.exe
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\roslyn\VBCSCompiler.exe.config
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\QuanLyTS.dll.config
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\QuanLyTS.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\QuanLyTS.pdb
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Antlr3.Runtime.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\EntityFramework.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\EntityFramework.SqlServer.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Google.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.Web.Infrastructure.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Newtonsoft.Json.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Owin.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\System.Web.Helpers.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\System.Web.Mvc.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\System.Web.Optimization.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\System.Web.Razor.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Deployment.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Razor.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\WebGrease.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\System.Web.Helpers.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\System.Web.Mvc.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\System.Web.Optimization.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\System.Web.Razor.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Deployment.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Razor.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Antlr3.Runtime.pdb
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Newtonsoft.Json.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\EntityFramework.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\EntityFramework.SqlServer.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Google.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.csprojResolveAssemblyReference.cache
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.dll
+E:\Web\EGroup-vn\Pasgo\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.pdb
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\roslyn\csc.exe
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\roslyn\System.Collections.Immutable.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\roslyn\System.Reflection.Metadata.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\roslyn\vbc.exe
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\roslyn\VBCSCompiler.exe
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\roslyn\VBCSCompiler.exe.config
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\QuanLyTS.dll.config
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\QuanLyTS.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\QuanLyTS.pdb
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Antlr3.Runtime.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\EntityFramework.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\EntityFramework.SqlServer.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Google.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.Web.Infrastructure.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Newtonsoft.Json.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Owin.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\System.Web.Helpers.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\System.Web.Mvc.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\System.Web.Optimization.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\System.Web.Razor.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Deployment.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Razor.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\WebGrease.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\System.Web.Helpers.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\System.Web.Mvc.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\System.Web.Optimization.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\System.Web.Razor.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Deployment.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Razor.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Antlr3.Runtime.pdb
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Newtonsoft.Json.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\EntityFramework.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\EntityFramework.SqlServer.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Google.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.csprojResolveAssemblyReference.cache
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.dll
+E:\Web\EGroup-vn\QuanlyTS\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.pdb
+F:\TES\QuanLyTS\QuanLyTS\bin\roslyn\csc.exe
+F:\TES\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\TES\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\TES\QuanLyTS\QuanLyTS\bin\roslyn\System.Collections.Immutable.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\roslyn\System.Reflection.Metadata.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\roslyn\vbc.exe
+F:\TES\QuanLyTS\QuanLyTS\bin\roslyn\VBCSCompiler.exe
+F:\TES\QuanLyTS\QuanLyTS\bin\roslyn\VBCSCompiler.exe.config
+F:\TES\QuanLyTS\QuanLyTS\bin\QuanLyTS.dll.config
+F:\TES\QuanLyTS\QuanLyTS\bin\QuanLyTS.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\QuanLyTS.pdb
+F:\TES\QuanLyTS\QuanLyTS\bin\Antlr3.Runtime.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\EntityFramework.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\EntityFramework.SqlServer.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Core.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Cookies.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Facebook.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Google.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.OAuth.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Twitter.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.Web.Infrastructure.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\Newtonsoft.Json.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\Owin.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\System.Web.Helpers.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\System.Web.Mvc.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\System.Web.Optimization.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\System.Web.Razor.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Deployment.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Razor.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\WebGrease.dll
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\System.Web.Helpers.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\System.Web.Mvc.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\System.Web.Optimization.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\System.Web.Razor.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Deployment.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Razor.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\Antlr3.Runtime.pdb
+F:\TES\QuanLyTS\QuanLyTS\bin\Newtonsoft.Json.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\EntityFramework.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\EntityFramework.SqlServer.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Core.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Facebook.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Cookies.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.OAuth.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Google.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Twitter.xml
+F:\TES\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\TES\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.csprojResolveAssemblyReference.cache
+F:\TES\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.dll
+F:\TES\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.pdb
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\roslyn\csc.exe
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\roslyn\System.Collections.Immutable.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\roslyn\System.Reflection.Metadata.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\roslyn\vbc.exe
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\roslyn\VBCSCompiler.exe
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\roslyn\VBCSCompiler.exe.config
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\QuanLyTS.dll.config
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\QuanLyTS.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\QuanLyTS.pdb
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Antlr3.Runtime.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\EntityFramework.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\EntityFramework.SqlServer.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Google.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.Web.Infrastructure.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Newtonsoft.Json.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Owin.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\PagedList.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\PagedList.Mvc.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\System.Web.Helpers.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\System.Web.Mvc.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\System.Web.Optimization.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\System.Web.Razor.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Deployment.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Razor.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\WebGrease.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\PagedList.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\PagedList.Mvc.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\System.Web.Helpers.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\System.Web.Mvc.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\System.Web.Optimization.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\System.Web.Razor.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Deployment.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Razor.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Antlr3.Runtime.pdb
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Newtonsoft.Json.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\EntityFramework.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\EntityFramework.SqlServer.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Google.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.dll
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.pdb
+E:\Web\EGroup-vn\QuanlyTS\26.11\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.csprojResolveAssemblyReference.cache
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\csc.exe
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\System.Collections.Immutable.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\System.Reflection.Metadata.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\vbc.exe
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\VBCSCompiler.exe
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\VBCSCompiler.exe.config
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\QuanLyTS.dll.config
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\QuanLyTS.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\QuanLyTS.pdb
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Antlr3.Runtime.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\EntityFramework.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\EntityFramework.SqlServer.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Google.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Web.Infrastructure.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Newtonsoft.Json.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Owin.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\PagedList.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\PagedList.Mvc.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.Helpers.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.Mvc.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.Optimization.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.Razor.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Deployment.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Razor.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\WebGrease.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\PagedList.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\PagedList.Mvc.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.Helpers.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.Mvc.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.Optimization.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.Razor.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Deployment.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Razor.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Antlr3.Runtime.pdb
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Newtonsoft.Json.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\EntityFramework.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\EntityFramework.SqlServer.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Google.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.dll
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.pdb
+D:\Quan ly tai san\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.csprojResolveAssemblyReference.cache
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\csc.exe
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\System.Collections.Immutable.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\System.Reflection.Metadata.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\vbc.exe
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\VBCSCompiler.exe
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\roslyn\VBCSCompiler.exe.config
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\QuanLyTS.dll.config
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\QuanLyTS.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\QuanLyTS.pdb
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Antlr3.Runtime.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\ClosedXML.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\EntityFramework.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\EntityFramework.SqlServer.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Google.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Web.Infrastructure.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Newtonsoft.Json.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Owin.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\PagedList.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\PagedList.Mvc.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.Helpers.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.Mvc.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.Optimization.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.Razor.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Deployment.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Razor.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\WebGrease.dll
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\PagedList.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\PagedList.Mvc.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.Helpers.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.Mvc.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.Optimization.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.Razor.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Deployment.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Razor.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Antlr3.Runtime.pdb
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Newtonsoft.Json.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\EntityFramework.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\EntityFramework.SqlServer.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Google.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.pdb
+E:\Quan ly tai san\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.csprojResolveAssemblyReference.cache
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\roslyn\csc.exe
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\roslyn\System.Collections.Immutable.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\roslyn\System.Reflection.Metadata.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\roslyn\vbc.exe
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\roslyn\VBCSCompiler.exe
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\roslyn\VBCSCompiler.exe.config
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\QuanLyTS.dll.config
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\QuanLyTS.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\QuanLyTS.pdb
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Antlr3.Runtime.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\ClosedXML.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\EntityFramework.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\EntityFramework.SqlServer.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Core.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Cookies.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Facebook.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Google.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.OAuth.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Twitter.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.Web.Infrastructure.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Newtonsoft.Json.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Owin.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\PagedList.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\PagedList.Mvc.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\System.Web.Helpers.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\System.Web.Mvc.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\System.Web.Optimization.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\System.Web.Razor.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Deployment.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Razor.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\WebGrease.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\PagedList.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\PagedList.Mvc.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\System.Web.Helpers.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\System.Web.Mvc.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\System.Web.Optimization.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\System.Web.Razor.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Deployment.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\System.Web.WebPages.Razor.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Antlr3.Runtime.pdb
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Newtonsoft.Json.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\EntityFramework.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\EntityFramework.SqlServer.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Core.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Facebook.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Cookies.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.OAuth.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Google.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.Twitter.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.dll
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.pdb
+D:\[Y] Your job\AssetManagement\QuanLyTS\QuanLyTS\obj\Debug\QuanLyTS.csprojResolveAssemblyReference.cache

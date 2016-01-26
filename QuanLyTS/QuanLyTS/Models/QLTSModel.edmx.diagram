@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f24984d92a3f45d08a0f8001dbf7dcfc" Name="Diagram1">
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.C__MigrationHistory" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.AspNetRole" Width="1.5" PointX="3.75" PointY="2.5" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.AspNetUserClaim" Width="1.5" PointX="8.25" PointY="3.625" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.AspNetUserLogin" Width="1.5" PointX="8.25" PointY="1" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.AspNetUser" Width="1.5" PointX="6" PointY="1.375" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.sysdiagram" Width="1.5" PointX="10.75" PointY="3.75" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.tblBoPhan" Width="1.5" PointX="1.5" PointY="27.25" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.tblCanBoGiaoVien" Width="1.5" PointX="1.5" PointY="17.875" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.tblChiTietChuyen" Width="1.5" PointX="8.25" PointY="12.625" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.tblChiTietGiaoNhan" Width="1.5" PointX="3" PointY="7.5" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.tblChiTietPhieuMuon" Width="1.5" PointX="11.25" PointY="12.25" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.tblChiTietPhieuTra" Width="1.5" PointX="3" PointY="12.25" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.tblDonVi" Width="1.5" PointX="1.5" PointY="2.375" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.tblDuAn" Width="1.5" PointX="3.75" PointY="17.75" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.tblGroupAsset" Width="1.5" PointX="1.5" PointY="31" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.tblKhoLuuTru" Width="1.5" PointX="0.75" PointY="23" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.tblKhoTaiSan" Width="1.5" PointX="8.25" PointY="17.125" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.tblLoaiTaiSan" Width="1.5" PointX="3.75" PointY="30.75" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.tblNoiSuDung" Width="1.5" PointX="0.75" PointY="34" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.tblNoiSuDungTaiSan" Width="1.5" PointX="8.25" PointY="9.125" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.tblPhieuBanGiao" Width="1.5" PointX="0.75" PointY="6" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.tblQuaTrinhDiChuyen" Width="1.5" PointX="6" PointY="7" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.tblTaiKhoan" Width="1.5" PointX="3.75" PointY="21" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.tblTaiSan" Width="1.5" PointX="6" PointY="10.625" />
+        <EntityTypeShape EntityType="QuanLyTaiSanModel.tblTinhTrang" Width="1.5" PointX="0.75" PointY="12.875" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblCBGV_tblBoPhan" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblKhoLuuTru_tblBoPhan" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblNoiSuDung_tblBoPhan" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblCanBoGiaoVien" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblCanBoGiaoVien" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblPhieuBanGiao_tblCanBoGiaoVien" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblQuaTrinhDiChuyen_tblCanBoGiaoVien" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblTaiKhoan_tblCanBoGiaoVien" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblKhoLuuTru" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblNoiSuDung" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblQuaTrinhDiChuyen" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblTaiSan" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblChiTietChuyen_tblTinhTrang" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblChiTietGiaoNhan_tblKhoLuuTru" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblChiTietGiaoNhan_tblPhieuBanGiao" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblChiTietGiaoNhan_tblTinhTrang1" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblKhoLuuTru" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblNoiSuDung" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblTaiSan" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblChiTietPhieuMuon_tblTinhTrang" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblKhoLuuTru" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblNoiSuDung" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblTaiSan" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblChiTietPhieuTra_tblTinhTrang" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblPhieuBanGiao_tblDonVi" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblTaiSan_tblDonVi" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblTaiSan_tblDuAn" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblLoaiTaiSan_tblGroupAsset" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblKhoTaiSan_tblKhoLuuTru" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblKhoTaiSan_tblTaiSan" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblTaiSan_tblLoaiTaiSan" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblNoiSuDungTaiSan_tblNoiSuDung" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblNoiSuDungTaiSan_tblTaiSan" />
+        <AssociationConnector Association="QuanLyTaiSanModel.FK_tblTaiSan_tblTinhTrang" />
+        <AssociationConnector Association="QuanLyTaiSanModel.AspNetUserRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

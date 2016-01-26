@@ -1,0 +1,73 @@
+﻿@using Microsoft.AspNet.Identity;
+@{
+    string userId = User.Identity.GetUserId<string>();
+}
+
+
+    <div class="ThanBenTrai2">
+    <!-- Muc San pham --->
+    @*<div class="ToanKhoi">
+        <div class="MeNuThang3">
+            <div class="MeNuTieuDe">QUẢN TRỊ HỆ THỐNG</div>
+            @if (User.IsInRole("Xưởng trưởng"))
+            {
+            <div class="MeNuDanhSach">
+                <ul>
+                    <li><a href="/tblQuaTrinhDiChuyens" style="font-family: Tahoma; font-size: small;">Điều chuyển tài sản</a></li>
+                    <li><a href="/tblChiTietChuyens" style="font-family: Tahoma; font-size: small;">Chi tiết điều chuyển</a></li>
+                    <li><a href="/tblKhoLuuTrus" style="font-family: Tahoma; font-size: small;">Kho lưu trữ</a></li>
+                    <li><a href="/tblNoiSuDungs" style="font-family: tahoma; font-size: small;">Đơn vị sử dụng</a></li>                    
+                    <li><a href="/tblTaiSans/taisandieuchuyen" style="font-family: tahoma; font-size: small;"> Tài sản nơi điều chuyển</a></li>
+                    <li><a href="/tblChitietGiaoNhans" style="font-family: tahoma; font-size: small;">Bàn giao tài sản</a></li>
+                    <li><a href="/tblKhoTaiSans" style="font-family: tahoma; font-size: small;">Kho tài sản</a></li>
+                    <li><a href="/tblTaiSans" style="font-family: tahoma; font-size: small;">Tìm kiếm tài sản</a></li>
+                </ul>
+            </div>
+            }
+            else
+            {
+                if (User.IsInRole("Admin"))
+                {
+                    <div class="MeNuDanhSach">
+                        <ul>
+                            <li><a href="/UsersAdmin/Create" style="font-family: Tahoma; font-size: small;">Tạo tài khoản</a></li>
+                            <li><a href="/tblCanBoGiaoViens" style="font-family: Tahoma; font-size: small;">Quản lý thành viên</a></li>
+                            <li><a href="/UsersAdmin/Details/@userId" style="font-family: Tahoma; font-size: small;">Thông tin cá nhân</a></li>
+                            <li><a href="/Manage/ChangePassword" style="font-family: tahoma; font-size: small;">Đổi mật khẩu</a></li>
+                            
+                        </ul>
+                    </div>
+                }
+                else
+                {
+                    <div class="MeNuDanhSach">
+                        <ul>
+                            
+                            <li><a href="/tblChiTietPhieuMuons/MuonTaiSan" style="font-family: Tahoma; font-size: small;">Mượn tài sản</a></li>                                                        
+                            <li><a href="/tblChiTietPhieuTras/TraTaiSan" style="font-family: tahoma; font-size: small;">Trả tài sản</a></li>
+                            <li><a href="/tblTaiSans" style="font-family: Tahoma; font-size: small;">Thông tin tài sản kho</a></li>                            
+                            <li><a href="/UsersAdmin/Details/@userId" style="font-family: tahoma; font-size: small;"> Thông tin cá nhân</a></li>
+                            <li><a href="/Manage/ChangePassword" style="font-family: tahoma; font-size: small;">Đổi mật khẩu</a></li>                            
+                        </ul>
+                    </div>
+                }
+            }
+        </div>
+
+        <div class="MeNuTieuDe">HỖ TRỢ TRỰC TUYẾN</div>
+
+        <div class="httt">
+            <center>
+                <img src="/Content/anh/download.jpg" style="width: 200px; height: 161px;" />
+            </center>
+        </div>
+
+
+    </div>*@
+    <!-- Muc san pham --->
+    <!-- Muc lua chon--->
+    <!-- KT Muc lua chon--->
+    <!-- Muc khuyen mai --->
+
+</div>
+
