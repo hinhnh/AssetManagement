@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "Thanh lý";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Thanh lý</h2>
+<div class="row">
+    <div class="col-xs-6">
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="form-group">
+                <label class="control-label col-md-4">Danh mục tài sản</label>
+                <div class="col-md-8">
+                    <select class="form-control">
+                        <option value="">--Chọn Nhóm Tài Sản--</option>
+                        <option value="MT">Máy Tính</option>
+                        <option value="OTO">Ô TÔ</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-4">Loại tài sản</label>
+                <div class="col-md-8">
+                    <select class="form-control">
+                        <option value="">--Chọn Nhóm Tài Sản--</option>
+                        <option value="MT">Máy Tính</option>
+                        <option value="OTO">Ô TÔ</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-4">Tên tài sản</label>
+                <div class="col-md-8">
+                    <input class="form-control" id="inputdefault" type="text">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-4">Mã tài sản</label>
+                <div class="col-md-8">
+                    <input class="form-control" id="" type="text">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-md-4">Đơn vị sử dụng</label>
+                <div class="col-md-8">
+                    <select class="form-control">
+                        <option value="">--Chọn Nhóm Tài Sản--</option>
+                        <option value="MT">Máy Tính</option>
+                        <option value="OTO">Ô TÔ</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">Thời điểm thanh lý</label>
+                <div class="col-md-8">
+                    <input class="form-control" id="" type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-3"></label>
+                <div class="col-md-8">
+                    <input type="submit" value="In báo cáo" class="btn btn-primary" />
+                    <input type="submit" value="In biên bản" class="btn btn-danger" />
+                    <input type="submit" value="Xuất excel" class="btn btn-success" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div><!--End ROW 1-->
+<div class="row">
+    <div class="col-xs-12">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="pill" href="#home">Chi tiết tài sản</a></li>
+            <li><a data-toggle="pill" href="#menu1">Ban thanh lý</a></li>
+        </ul>
+    </div>
+</div><!--End ROW 2-->

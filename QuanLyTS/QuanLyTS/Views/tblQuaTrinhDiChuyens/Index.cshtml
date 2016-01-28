@@ -10,49 +10,188 @@
 <p>
     @Html.ActionLink("Thêm mới", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            Mã lần chuyển
-        </th>
-        <th>
-            Tên lần chuyển
-        </th>
-        <th>
-            Họ tên giáo viên
-        </th>
-        <th>
-            Ngày chuyển
-        </th>
-        <th>
-            Ghi chú
-        </th>
-        <th></th>
-    </tr>
+<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+<div class="row">
+    <div class="col-xs-6">
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                <label class="control-label col-md-4">Số chứng từ</label>
+                <div class="col-md-8">
+                    <input class="form-control" id="inputdefault" type="text">
+                </div>
+            </div>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.MaLanChuyen)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TenLanChuyen)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.tblCanBoGiaoVien.HoTen)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NgayChuyen)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.GhiChu)
-        </td>
-        <td>
-            @Html.ActionLink("Sửa", "Edit", new { id=item.MaLanChuyen }) |
-            @Html.ActionLink("Chi tiết", "Details", new { id=item.MaLanChuyen }) |
-            @Html.ActionLink("Xóa", "Delete", new { id=item.MaLanChuyen })
-        </td>
-    </tr>
-}
+            <div class="form-group">
+                <label class="control-label col-md-4">Từ đơn vị</label>
+                <div class="col-md-8">
+                    <select class="form-control">
+                        <option value="">--Chọn Nhóm Tài Sản--</option>
+                        <option value="MT">Máy Tính</option>
+                        <option value="OTO">Ô TÔ</option>
+                    </select>
+                </div>
+            </div>
 
-</table>
+            <div class="form-group">
+                <label class="control-label col-md-4">Ngày chứng từ</label>
+                <div class="col-md-8">
+                    <input class="form-control" id="" type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">Ngày điều chuyển</label>
+                <div class="col-md-8">
+                    <input class="form-control" id="" type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">Nội dung điều chuyển</label>
+                <div class="col-md-8">
+                    <textarea class="form-control" placeholder="Message"></textarea>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-md-4">Đến đơn vị</label>
+                <div class="col-md-8">
+                    <select class="form-control">
+                        <option value="">--Chọn Nhóm Tài Sản--</option>
+                        <option value="MT">Máy Tính</option>
+                        <option value="OTO">Ô TÔ</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">Mã tài sản</label>
+                <div class="col-md-8">
+                    <input class="form-control" id="" type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">Ghi chú về tài sản</label>
+                <div class="col-md-8">
+                    <textarea class="form-control" placeholder="Message"></textarea>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="control-label col-md-2"></label>
+                <div class="col-md-9">
+                    <input type="submit" value="Điều chuyển" class="btn btn-primary" />
+                    <input type="submit" value="Hủy điều chuyển" class="btn btn-danger" />
+                    <input type="submit" value="In phiếu" class="btn btn-success" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div><!--End ROW 1-->
+<div class="row">
+    <div class="col-md-6">
+        <label style="color:#72bf44" class="control-label col-md-12">Thiết bị của đơn vị đang sử dụng</label>
+        <table class="table">
+            <tr>
+                <th>
+                    Mã lần chuyển
+                </th>
+                <th>
+                    Tên lần chuyển
+                </th>
+                <th>
+                    Họ tên giáo viên
+                </th>
+                <th>
+                    Ngày chuyển
+                </th>
+                <th>
+                    Ghi chú
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaLanChuyen)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TenLanChuyen)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.tblCanBoGiaoVien.HoTen)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NgayChuyen)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.GhiChu)
+                    </td>
+                    @*<td>
+        @Html.ActionLink("Sửa", "Edit", new { id = item.MaLanChuyen }) |
+        @Html.ActionLink("Chi tiết", "Details", new { id = item.MaLanChuyen }) |
+        @Html.ActionLink("Xóa", "Delete", new { id = item.MaLanChuyen })
+    </td>*@
+                </tr>
+            }
+
+        </table>
+    </div>
+    <div class="col-md-6">
+        <label style="color:#72bf44" class="control-label col-md-12">Thiết bị của đơn nhận điều chuyển</label>
+        <table class="table">
+            <tr>
+                <th>
+                    Mã lần chuyển
+                </th>
+                <th>
+                    Tên lần chuyển
+                </th>
+                <th>
+                    Họ tên giáo viên
+                </th>
+                <th>
+                    Ngày chuyển
+                </th>
+                <th>
+                    Ghi chú
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaLanChuyen)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TenLanChuyen)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.tblCanBoGiaoVien.HoTen)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NgayChuyen)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.GhiChu)
+                    </td>
+                    @*<td>
+        @Html.ActionLink("Sửa", "Edit", new { id = item.MaLanChuyen }) |
+        @Html.ActionLink("Chi tiết", "Details", new { id = item.MaLanChuyen }) |
+        @Html.ActionLink("Xóa", "Delete", new { id = item.MaLanChuyen })
+    </td>*@
+                </tr>
+            }
+
+        </table>
+    </div>
+
+</div><!--End ROW-->
+
