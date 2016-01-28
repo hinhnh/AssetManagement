@@ -203,6 +203,7 @@
     <Compile Include="Controllers\tblQuaTrinhDiChuyensController.cs" />
     <Compile Include="Controllers\tblTaiKhoansController.cs" />
     <Compile Include="Controllers\tblTaiSansController.cs" />
+    <Compile Include="Controllers\tblThanhLyController.cs" />
     <Compile Include="Controllers\tblTinhTrangsController.cs" />
     <Compile Include="Controllers\UserAdminController.cs" />
     <Compile Include="Global.asax.cs">
@@ -769,6 +770,7 @@
     <Content Include="Views\tblChiTietPhieuTras\TraTaiSan.cshtml" />
     <Content Include="Views\Shared\_ListAssetsByType.cshtml" />
     <Content Include="Views\tblTaiSans\Maintenance.cshtml" />
+    <Content Include="Views\tblThanhLy\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\Image\" />
